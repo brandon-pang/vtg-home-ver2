@@ -1,0 +1,53 @@
+@import "utils";
+
+.box_container {
+  width: 250px;
+  flex-direction: column;
+  @include flex-style(center, center);
+  .box-title {
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    @include notoSans-kr-style(16px, 300, 24px, #1c1c1c);
+  }
+  .box-img {
+    height: 134px;
+    width: 250px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    @include flex-style(center, center);
+  }
+}
+.box_container:nth-child(4) {
+  margin-top: 53px;
+}
+.box_container:nth-child(5) {
+  margin-top: 53px;
+}
+.box_container:nth-child(6) {
+  margin-top: 53px;
+}
+
+@include media("<=tablet") {
+  .box_container {
+    margin-bottom: 53px;
+  }
+  .box_container:nth-child(4) {
+    margin-top: 0;
+  }
+}
+
+@include media("<=phone") {
+  .box_container {
+    margin-top: 0;
+  }
+  .box_container:nth-child(4) {
+    margin-top: 0;
+  }
+  .box_container:nth-child(5) {
+    margin-top: 0;
+  }
+  .box_container:nth-child(6) {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,54 @@
+@import 'utils';
+
+@include media("<=phone") {
+  .hire_position_container_modal {
+    padding-left: 31px;
+    padding-right: 31px;
+    padding-top: 23px;
+    .closeModal_wrapper {
+      height: 19.2px;
+      position: relative;
+      .closeImg {
+        position: absolute;
+        top: -10%;
+        right: -3%;
+        margin: auto;
+      }
+    }
+    .modal_header {
+      flex-direction: column;
+      @include flex-style(center, center);
+      .header_team {
+        width: 100%;
+        @include flex-style(flex-start, center);
+        @include notoSans-kr-style(18px, 500, 27px, #1c1c1c);
+      }
+      .header_row2 {
+        margin-top: 12px;
+        width: 100%;
+        @include flex-style(flex-start, center);
+        .header_position {
+          @include notoSans-style(14px, 300, 19px, #1c1c1c);
+        }
+        .header_contury {
+          @include notoSans-style(14px, 300, 19px, #b847d0);
+        }
+      }
+      .header_divline {
+        margin-top: 11px;
+        width: 100%;
+        height: 1px;
+        background-color: #DDDDDD;
+      }
+    }
+    .contents_body {
+      margin-top: 12px;
+      width: 100%;
+      @include notoSans-kr-style(14px, 300, 28px, #858585);
+    }
+    .applyBtn_wrapper {
+      margin-top: 35px;
+      @include flex-style(center, center);
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import "utils";
+
+[class*="steps_wrapper-"] {
+  position: absolute;
+  flex-direction: column;
+  @include flex-style(center, flex-start);
+}
+
+.step {
+  @include notoSans-kr-style(16px, 300, 24px, #858585);
+}
+
+@include media("<=tablet") {
+  .step {
+    @include notoSans-kr-style(14px, 300, 20px, #858585);
+  }
+}
+
+@include media("<=phone") {
+  [class*="steps_wrapper-"] {
+    position: relative;
+    flex-direction: column;
+    @include flex-style(center, flex-start);
+  }
+}

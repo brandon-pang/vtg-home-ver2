@@ -1,0 +1,32 @@
+@import 'utils';
+
+.filter_container {
+  width: 100%;
+  max-width: 1000px;
+  //border-radius: 5px;
+  @include flex-style(center, center);
+  .category_element {
+    border: 1px solid #1C1C1C;
+    text-transform: uppercase;
+    //border-left: 1px solid #1c1c1c;
+    height: 50px;
+    width: 100%;
+    max-width: 333px;
+    @include flex-style(center, center);
+    @include notoSans-style(16px, 500, 22px, #1c1c1c);
+  }
+  .category_element:nth-child(1) {
+    border-right: 0;
+    border-radius: 5px 0 0 5px;
+  }
+  .category_element:nth-child(3) {
+    border-left: 0;
+    border-radius: 0 5px 5px 0;
+  }
+}
+
+@include media("<=phone") {
+  .filter_container {
+    display: none;
+  }
+}

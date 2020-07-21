@@ -1,0 +1,109 @@
+@import "utils";
+
+.slider_wrapper {
+  width: 100%;
+  min-height: 1px;
+}
+
+.game_card_container {
+  width: 100%;
+  //max-width: 100px;
+  .slick-list {
+    margin-top: 59px;
+    height: 548px;
+    .slick-track {
+      margin-left: 10px;
+      .slick-slide {
+        outline: none;
+      }
+    }
+  }
+}
+
+.news_card_container {
+  width: 100%;
+  .slick-slider {
+    .slick-list {
+      height: 555px;
+      .slick-track {
+        margin: 0;
+        .slick-slide {
+          outline: none;
+        }
+      }
+    }  
+  }
+}
+
+.leftArrow, .rightArrow {
+  position: absolute;
+  top: -43px;
+  margin: 0 auto;
+}
+.leftArrow {
+  right: 150px;
+}
+.rightArrow {
+  right: 210px;
+}
+
+
+@include media("<=tablet") {
+  .game_card_container {
+    margin-top: 0;
+    .slick-list {
+      margin-top: 0;
+      .slick-track{
+        .slick-slide {
+          width: 350px;
+        }
+      }
+    }
+  }
+  .leftArrow, .rightArrow {
+    position: absolute;
+    top: -100px;
+    margin: 0 auto;
+  }
+  .leftArrow {
+    top: -100px;
+    right: 59px;
+  }
+  .rightArrow {
+    top: -103px;
+    right: 119px;
+  }
+  .news_card_container {
+  }
+}
+
+@include media("<=phone") {
+  .game_card_container {
+    margin-top: 0;
+    width: 100%;
+    max-width: 1700px;
+    .slick-list {
+      height: 318px;
+      .slick-track{
+        .slick-slide {
+          width: 235px;
+        }
+      }
+    }
+  }
+
+  .news_card_container {
+    width: 100%;
+    max-width: 1700px;
+    .slick-slider {
+      .slick-list {
+        height: 355px;
+        .slick-track {
+          .slick-slide {
+            width: 235px;
+          }
+        }
+      }
+    }
+  }
+}

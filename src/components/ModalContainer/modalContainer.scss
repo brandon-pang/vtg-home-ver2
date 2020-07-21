@@ -1,0 +1,29 @@
+@import 'utils';
+
+.games_modal {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  margin: auto;
+  transform: translate(-50%, -50%);
+  overflow-y: scroll;
+  z-index: 9999;
+}
+
+@include media("<=tablet") {
+  .games_modal {
+    .dialog__content {
+      width: 100vw;
+    }
+  }
+}
+
+@include media("<=phone") {
+  .games_modal {
+    .dialog__content {
+      width: 100vw;
+    }
+  }
+}

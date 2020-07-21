@@ -1,0 +1,143 @@
+@import "utils";
+
+.gameCard_container {
+  width: 100%;
+  max-width: 980px;
+  flex-wrap: wrap;
+  @include flex-style(space-around, center);
+  .game_card_small {
+    margin-bottom: 45px;
+    position: relative;
+    flex-direction: column;
+    @include flex-style(center, center);
+    
+    .game_card_new {
+      z-index: 2;
+      position: absolute;
+      top: -5px;
+      right: -6px;
+      margin: auto;
+      width: 40px;
+      height: 40px;
+      background-position: center;
+      background-size: contain;
+    }
+    .game_card_bg_parent {
+      position: relative;
+      cursor: pointer;
+      width: 230px;
+      height: 230px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease;
+      &:hover {
+        box-shadow: 6px 10px 15px rgba(0, 0, 0, 0.2);
+      }
+      .game_card_bg_child {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+      .commingSoon_overlap {
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        width: 230px;
+        height: 230px;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.6);
+        text-transform: uppercase;
+        @include flex-style(center, center);
+        @include notoSans-style(18px, none, 29px, #fff);
+      }
+    }
+    .game_title {
+      margin-top: 9px;
+      width: 100%;
+      text-align: center;
+      @include notoSans-kr-style(22px, normal, 27px, #1c1c1c);
+    }
+    .game_subtitle {
+      margin-top: 9px;
+      width: 100%;
+      text-align: center;
+      @include notoSans-kr-style(16px, 300, 19px, #858585);
+    }
+    .game_env_container {
+      width: 100%;
+      @include flex-style(center, center);
+      .game_environment {
+        margin-right: 8px;
+        margin-top: 60px;
+        width: 100%;
+        max-width: 62px;
+        height: 25px;
+        border-radius: 3px;
+        background-color: #cccccc;
+        @include flex-style(center, center);
+        @include notoSans-style(12px, 500, 17px, #fff);
+      }
+    }
+
+    .game_view_more_btn {
+      text-transform: uppercase;
+      margin-top: 16px;
+      height: 30px;
+      width: 106px;
+      border: 1px solid #858585;
+      border-radius: 5px;
+      @include flex-style(center, center);
+      @include notoSans-style(14px, 200, 19px, #858585);
+    }
+    .game_view_more_btn_inactive {
+      margin-top: 16px;
+      height: 30px;
+      width: 106px;
+    }
+  }
+}
+
+@include media("<=tablet") {
+  .gameCard_container {
+    .game_card_small {
+      .game_card_new {
+        width: 52px;
+        height: 52px;
+        img {
+          width: 52px;
+          height: 52px;
+        }
+      }
+      .gameCard-small {
+        width: 299px;
+        height: 299px;
+      }
+    }
+  }
+}
+
+@include media("<=phone") {
+  .gameCard_container {
+    padding-left: 5px;
+    padding-right: 5px;
+    .game_card_small {
+      .game_card_bg_parent {
+        width: 200px;
+        height: 200px;
+      }
+      .game_title {
+        font-size: 18px;
+      }
+      
+    }
+  }
+}

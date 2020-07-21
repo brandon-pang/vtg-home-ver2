@@ -1,0 +1,133 @@
+@import "utils";
+
+.circle_wrapper_small {
+  height: 135px;
+  width: 135px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  @include flex-style(center, center);
+  .circle_inside {
+    width: 100%;
+    max-width: 133px;
+    flex-direction: column;
+    @include flex-style(center, center);
+  }
+  .circle_number {
+    width: 100%;
+    max-width: 80px;
+    text-align: left;
+    @include notoSans-kr-style(22px, 500, 33px, #1c1c1c);
+  }
+  .circle_desc {
+    width: 100%;
+    max-width: 100px;
+    text-align: left;
+    @include notoSans-kr-style(21px, 300, 33px, #1c1c1c);
+  }
+}
+
+.circle_wrapper_large {
+  height: 242px;
+  width: 242px;
+  border-radius: 50%;
+  border: 2px solid #ff8300;
+  @include flex-style(center, center);
+  .circle_inside {
+    width: 100%;
+    max-width: 133px;
+    flex-direction: column;
+    @include flex-style(center, center);
+  }
+  .circle_number {
+    width: 100%;
+    max-width: 120px;
+    text-align: left;
+    @include notoSans-kr-style(22px, 500, 33px, #1c1c1c);
+  }
+  .circle_desc {
+    width: 100%;
+    max-width: 133px;
+    text-align: left;
+    @include notoSans-kr-style(22px, 300, 33px, #1c1c1c);
+  }
+}
+
+// circle medium
+.circle_wrapper_medium {
+  height: 220px;
+  width: 220px;
+  border-radius: 50%;
+  background-color: #dddddd;
+  @include flex-style(center, center);
+  .circle_inside {
+    width: 100%;
+    max-width: 133px;
+    flex-direction: column;
+    @include flex-style(center, center);
+  }
+  .circle_number {
+    width: 100%;
+    max-width: 106px;
+    text-align: left;
+    @include notoSans-kr-style(22px, 500, 33px, #1c1c1c);
+  }
+  .circle_desc {
+    @include notoSans-kr-style(22px, 300, 33px, #1c1c1c);
+  }
+}
+
+@include media("<=tablet") {
+  .circle_wrapper_small {
+    height: 104px;
+    width: 104px;
+    .circle_inside {
+      max-width: 67px;
+    }
+    .circle_number {
+      @include notoSans-kr-style(18px, 500, 27px, #1c1c1c);
+    }
+    .circle_desc {
+      @include notoSans-kr-style(18px, 300, 27px, #1c1c1c);
+    }
+  }
+
+  .circle_wrapper_large {
+    height: 187px;
+    width: 187px;
+    .circle_inside {
+      max-width: 100px;
+    }
+    .circle_number {
+      @include notoSans-kr-style(18px, 500, 27px, #1c1c1c);
+    }
+    .circle_desc {
+      @include notoSans-kr-style(18px, 300, 27px, #1c1c1c);
+    }
+  }
+
+  .circle_wrapper_medium {
+    height: 170px;
+    width: 170px;
+    .circle_inside { 
+      max-width: 87px;
+    }
+    .circle_number {
+      @include notoSans-kr-style(18px, 500, 27px, #1c1c1c);
+    }
+    .circle_desc {
+      @include notoSans-kr-style(18px, 300, 27px, #1c1c1c);
+    }
+  }
+}
+
+@include media("<=phone") {
+  .circle_wrapper_small {
+    display: 'none'
+  }
+  .circle_wrapper_medium {
+    display: 'none'
+  }
+  .circle_wrapper_large {
+    display: 'none'
+  }
+}

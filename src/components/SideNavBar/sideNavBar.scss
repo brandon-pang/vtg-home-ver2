@@ -1,0 +1,126 @@
+@import "utils";
+
+.sideNavBar_container {
+  transform: rotate(-90deg);
+  transform-origin: left top;
+  z-index: 999;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 60px;
+  width: calc(100vh - 80px);
+  margin-bottom: -60px;
+  //opacity: 0.7;
+  background-color: #ffffff;
+  //background-color: red;
+  flex-direction: column;
+  @include flex-style(center, center);
+  .navBar_container {
+    width: 80%;
+    @include flex-style(center, center);
+    .element_wrapper_active {
+      cursor: pointer;
+      background: none;
+      border: none;
+      z-index: 1;
+      position: relative;
+      width: 100%;
+      flex-direction: column;
+      @include flex-style(center, center);
+      .nav_element {
+        opacity: 1;
+        padding-top: 22px;
+        padding-bottom: 15px;
+        text-transform: uppercase;
+        text-align: center;
+        @include notoSans-style(14px, bold, 19px, #1c1c1c);
+      }
+      .blackbar {
+        transition: all 0.3s ease;
+        width: 114px;
+        height: 2px;
+        background-color: #1c1c1c;
+      }
+    }
+    .element_wrapper_inactive {
+      cursor: pointer;
+      background: none;
+      border: none;
+      z-index: 1;
+      position: relative;
+      width: 100%;
+      flex-direction: column;
+      @include flex-style(center, center);
+      .nav_element {
+        padding-top: 22px;
+        padding-bottom: 15px;
+        text-transform: uppercase;
+        text-align: center;
+        @include notoSans-style(14px, bold, 19px, #ddd);
+      }
+      .blackbar {
+        width: 0;
+        height: 2px;
+      }
+    }
+  }
+  .border_bottom_line {
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+    width: 588px;
+    height: 1px;
+    opacity: 0.6;
+    background-color: #dddddd;
+  }
+}
+
+@include media("<=tablet") {
+  .sideNavBar_container {
+    height: 44px;
+    width: calc(100vh - 64px);
+    .navBar_container {
+      .element_wrapper_active{
+        .nav_element {
+          padding-top: 8px;
+          padding-bottom: 12px;
+          @include notoSans-style(10px, bold, 19px, #1c1c1c);
+        }
+      }
+      .element_wrapper_inactive{
+        .nav_element {
+          padding-top: 8px;
+          padding-bottom: 12px;
+          @include notoSans-style(10px, bold, 19px, #ddd);
+        }
+      }
+    }
+  }
+}
+
+@include media("<=phone") {
+  .sideNavBar_container {
+    width: calc(100vh - 30px);
+    height: 34px;
+    .navBar_container {
+      .element_wrapper_active{
+        .nav_element {
+          padding-top: 8px;
+          padding-bottom: 3px;
+          @include notoSans-style(10px, bold, 19px, #1c1c1c);
+        }
+      }
+      .element_wrapper_inactive{
+        .nav_element {
+          padding-top: 11px;
+          padding-bottom: 12px;
+          @include notoSans-style(10px, bold, 19px, #ddd);
+        }
+      }
+    }
+    .border_bottom_line {
+      width: 80vh;
+    }
+  }
+}
+

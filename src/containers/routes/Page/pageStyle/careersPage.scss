@@ -1,0 +1,498 @@
+@import "utils";
+
+.careers_container {
+  width: 100%;
+  .dim_layer {
+    position: absolute;
+    width: 100%;
+    height: 650px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+  .masthead {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    @include flex-style(center, center);
+    .masthead--title {
+      z-index: 2;
+      text-align: center;
+      width: 100%;
+      max-width: 800px;
+      @include notoSans-style(50px, bold, 68px, #fff);
+    }
+    .masthead--subtitle {
+      z-index: 2;
+      margin-top: 60px;
+      width: 100%;
+      text-align: center;
+      @include notoSans-style(16px, bold, 22px, #ff8300);
+    }
+    .masthead--arrow {
+      position: absolute;      
+      width: 13px;
+      bottom: 50px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      z-index: 2;
+    }
+  }
+  
+  .careersBodyContents {
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    @include flex-style(center, center);
+    .nav_to_hirePosition {
+      z-index: 1;
+      cursor: pointer;
+      position: fixed;
+      right: 4%;
+      bottom: 5%;
+      height: 64px;
+      width: 220px;
+      border-radius: 34.5px;
+      background-color: #FF8300;
+      text-align: center;
+      box-shadow: 5px 7px 15px 0 rgba(0,0,0,0.2);
+      @include flex-style(center, center);
+      @include notoSans-kr-style(16px, 500, 24px, #Fff);
+      .nav_down_arrow {
+        margin-left: 10px;
+      }
+      &:hover {
+        transition: all 0.3s ease;
+        box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.3);
+      }
+    }
+    .careers_intro {
+      margin-top: 142px;
+      position: relative;
+      width: 100%;
+      flex-direction: column;
+      @include flex-style(center, center);
+      .intro_goal_header {
+        margin-top: 13px;
+        position: relative;
+        text-align: center;
+        height: 260px;
+        width: 100%;
+        background-color: #f6f6f6;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+        @include notoSans-kr-style(24px, 300, 50px, #1c1c1c);
+        @include flex-style(center, center);
+        .quoteStart {
+          position: absolute;
+          left: 0; 
+          right: 463px;
+          top: -140px;
+          bottom: 0;
+          margin: auto;
+        }
+        .goal_desc {
+          width: 100%;
+        }
+        .quoteEnd {
+          position: absolute;
+          left: 446px;
+          right: 0;
+          top: 0;
+          bottom: -95px;
+          margin: auto;
+        }
+      }
+      .intro_goal_body {
+        margin-top: 148px;
+        width: 100%;
+        max-width: 1013px;
+        @include flex-style(space-between, flex-start);
+      }
+    }
+      .vertigo_games_life_container { 
+        margin-top: 186px;
+        width: 100%;
+        max-width: 1013px;
+        flex-direction: column;
+        @include flex-style(flex-start, center);
+        .life_container {
+          width: 100%;
+          .listContainer:nth-child(1) {
+            margin-top: 67px;
+            margin-bottom: 79px;
+          }
+          .listContainer:nth-child(2) {
+            margin-bottom: 34px;
+          }
+          .vgLifeBox_wrapper_top {
+            margin-bottom: 77px;
+            width: 100%;
+            @include flex-style(center, flex-end);
+            .vgLifeBox_container_top {
+              width: 100%;
+              max-width: 946px;
+              @include flex-style(space-between, center);
+            }
+          }
+          .listContainer {
+            margin-bottom: 34px;
+          }
+          .vgLifeBox_wrapper_bottom {
+            width: 100%;
+            @include flex-style(center, flex-end);
+            .vgLifeBox_container_bottom {
+              width: 100%;
+              max-width: 946px;
+              @include flex-style(space-between, center);
+            }
+          }
+        }
+      }
+      .hire_process_container {
+        margin-top: 200px;
+        //height: 762px;
+        max-width: 100%;
+        width: 1040px;
+        flex-direction: column;
+        @include flex-style(center, flex-start);
+        .process_diagram_wrapper {
+          margin-top: 131px;
+          width: 100%;
+          flex-direction: column;
+          @include flex-style(center, center);
+          .process_diagram {
+            position: relative;
+            width: 100%;
+            @include flex-style(center, center);
+            .diagram_line {
+              z-index: -1;
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              margin: auto;
+              height: 1px;
+              width: 100%;
+              max-width: 1000px;
+              background-color: #dddddd;
+            }
+            .orange_vertical_line {
+              position: absolute;
+              left: 340px;
+              bottom: -43px; 
+              height: 90px;
+              width: 2px;
+              background-color: #FF8300;
+            }
+            .circle_wrapper_large {
+              margin-right: 16px;
+            }
+          }
+          .steps_container {
+            width: 100%;
+            position: relative;
+            // absolute positions
+            .steps_wrapper-1 {
+              width: 78px;
+              left: 172px;
+              top: -42px;
+              margin: 0 auto;
+            }
+            .steps_wrapper-2 {
+              width: 129px;
+              left: 342px;
+              top: 45px;
+              margin: 0 auto;
+            }
+            .steps_wrapper-3 {
+              width: 162px;
+              left: 603px;
+              top: 10px;
+              margin: 0 auto;
+            }
+          }
+        }
+        .process_info {
+          margin-top: 252px;
+          width: 100%;
+          max-width: 364px;
+          @include notoSans-kr-style(14px, 300, 26px, #858585);
+        }
+      }
+
+      .hire_position_title {
+        margin-top: 137px;
+        width: 100%;
+        max-width: 1040px;
+      }
+      .hire_position_container {
+        padding-bottom: 50px;
+        position: relative;
+        margin-top: 8px;
+        width: 100%;
+        min-height: 800px;
+        background-color: #F6F6F6;
+        flex-direction: column;
+        @include flex-style(flex-start, center);
+        .filter_container {
+          margin-top: 93px;
+
+        }
+        .accordion_container {
+          width: 100%;
+          max-width: 1000px;
+          margin-top: 40px;
+          @include flex-style(center, center);
+          .no_hire_wrapper {
+            text-align: center;
+            margin-bottom: 20px;
+            @include notoSans-kr-style(18px, 300, 26px, #000);
+          }
+          .korea_accordion_container {
+            width: 100%;
+            >div {
+              .accordion_master_wrapper {
+                margin-bottom: 15px;
+              }
+            }
+          }
+          .vancouver_accordion_container {
+            width: 100%;
+            >div {
+              .accordion_master_wrapper {
+                margin-bottom: 15px;
+              }
+            }
+          }
+          .singapore_accordion_container {
+            width: 100%;
+            >div {
+              .accordion_master_wrapper {
+                margin-bottom: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .last_section_nav {
+      width: 100%;
+      height: 409px;
+      @include flex-style(center, center);
+    }
+  
+}
+
+@include media("<=tablet") {
+  .careers_container {
+    .dim_layer {
+      height: 780px;
+    }
+    .masthead {      
+      height: 780px;
+      .masthead--title {
+        max-width: 600px;
+        @include notoSans-style(40px, bold, 68px, #fff);
+      }
+      .masthead--subtitle {
+        margin-top: 127px;
+        @include notoSans-style(14px, bold, 19px, #ff8300);
+      }
+      .masthead--arrow {
+        z-index: 2;
+        margin-top: 109px;
+      }
+    }
+    .careersBodyContents {
+      .nav_to_hirePosition {
+        //display: none;
+      }
+      .careers_intro {
+        .title_container {
+          max-width: 650px;
+        }
+        .intro_goal_body {
+          flex-wrap: wrap;
+          max-width: 565px;
+        }
+      }
+      .vertigo_games_life_container {
+        max-width: 650px;
+        .life_container {
+          max-width: 610px;
+          .vgLifeBox_wrapper_top {
+            .vgLifeBox_container_top {
+              flex-direction: column;
+            }
+          }
+          .vgLifeBox_wrapper_bottom {
+            .vgLifeBox_container_bottom {
+              flex-direction: column;
+            }
+          }
+        }
+      }
+      .hire_process_container {
+        max-width: 650px;
+        .process_diagram_wrapper {
+          .process_diagram {
+            .orange_vertical_line {
+              left: 191px;
+            }
+          }
+          .steps_container {
+            max-width: 650px;
+            .steps_wrapper-1 {
+              left: 59px;
+              top: -28px;
+            }
+            .steps_wrapper-2 {
+              left: 191px;
+              top: 52px;
+            }
+            .steps_wrapper-3 {
+              left: 383px;
+              top: 32px;
+            }
+          }
+        }
+        .process_info {
+          @include notoSans-kr-style(14px, 300, 24px, #858585);
+        }
+      }
+      .hire_position_title {
+        max-width: 650px;
+      }
+      .hire_position_container {
+        .filter_container {
+          max-width: 600px;
+        }
+        .accordion_container {
+          max-width: 600px;
+        }
+      }
+    }
+  }
+}
+
+@include media("<=phone") {
+  .careers_container {
+    .dim_layer {
+      height: 350px;
+    }
+    .masthead {
+      height: 350px;
+      .masthead--title {
+        margin-top: 77px;
+        max-width: 280px;
+        @include notoSans-style(25px, bold, 34px, #fff);
+      }
+      .masthead--subtitle {
+        margin-top: 37px;
+        @include notoSans-style(8px, bold, 11px, #ff8300);
+      }
+      .masthead--arrow {
+        display: none;
+      }
+    }
+    .careersBodyContents {
+      .nav_to_hirePosition {
+        height: 45px;
+        margin: 0 auto;
+        right: 0;
+        left: 0;
+        bottom: 5%;
+      }
+      .careers_intro {
+        margin-top: 101px;
+        .title_container {
+          max-width: 240px;
+          
+        }
+        .intro_goal_header {
+          height: 284px;
+          flex-direction: column;
+          @include notoSans-kr-style(18px, 300, 32px, #1c1c1c);
+          @include flex-style(center, center);
+          .quoteStart {
+            position: relative;
+            left: 0;
+            right:0;
+            top:0;
+            margin: auto;
+          }
+          .quoteEnd {
+            position: relative;
+            left: 0;
+            right:0;
+            bottom: 0;
+            margin: auto;
+          }
+          .goal_desc {
+            max-width: 320px;
+            flex-direction: column;
+            @include flex-style(center, center);
+          }
+        }
+        .intro_goal_body {
+          margin-top: 52px;
+          max-width: 240px;
+          
+        }
+      }
+      .vertigo_games_life_container {
+        margin-top: 62px;
+        .life_container {
+          max-width: 240px;
+          .listContainer:nth-child(1) {
+            margin-top: 50px;
+            margin-bottom: 34px;
+          }
+          .listContainer:nth-child(2) {
+            margin-bottom: 22px;
+          }
+        }
+      }
+      .hire_process_container {
+        margin-top: 87px;
+        max-width: 240px;
+        .process_diagram_wrapper {
+          margin-top: 28px;
+          @include flex-style(center, flex-start);
+          .process_diagram {
+            display: none;
+          }
+          .steps_container {
+            display: none;
+          }
+        }
+        .process_info {
+          margin-top: 50px;
+        }
+      }
+      .hire_position_title {
+        max-width: 240px;
+      }
+      .hire_position_container {
+        margin-top: 0;
+        min-height: 400px;
+        .mobile_hirelist_container {
+          .no_hire_wrapper {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            @include notoSans-kr-style(16px, 300, 26px, #000);
+          }
+        }
+      }
+    }
+    .last_section_nav {
+      background-color: #F6F6F6;
+    }
+  }
+}

@@ -1,0 +1,359 @@
+@import "utils";
+
+.kwh_contents_container {
+  margin-top: 74px;
+  width: 100%;
+  flex-direction: column;
+  @include flex-style(flex-start, center);
+  .kwonho_ch_bg--img {
+    width: 453px;
+    height: 347px;
+    background-position: top center;
+    background-size: cover;
+  }
+  .keyword_container {
+    width: 100%;
+    .title_container {
+      .title {
+        font-weight: 500;
+      }
+    }
+    .keyword_box_container {
+      margin-top: 45px;
+      @include flex-style(space-around, flex-end);
+      .keyword_box_wrapper {
+        margin-left: 30px;
+        width: 100%;
+        height: 259px;
+        max-width: 300px;
+        border-radius: 20px;
+        background-color: #F6F6F6;
+        flex-direction: column;
+        @include flex-style(center, center);
+        .keyword_title {
+          text-align: center;
+          @include notoSans-kr-style(18px, 500, 31px, #1c1c1c);
+        }
+        .keyword_desc {
+          width: 100%;
+          text-align: center;
+          margin-top: 17px;
+          @include notoSans-kr-style(16px, 300, 30px, #1c1c1c);
+        }
+      }
+    }
+    
+  }
+  .worldview_container {
+    margin-top: 154px;
+    width: 100%;
+    .title_container {
+      .title {
+        font-weight: 500;
+      }
+    }
+    .khw_pyramid_img_wrapper {
+      width: 100%;
+      @include flex-style(center, center);
+    }
+    .pyramid_desc {
+      margin-top: 33px;
+      width: 100%;
+      text-align: center;
+      @include notoSans-kr-style(16px, 300, 30px, #1c1c1c);
+    }
+  }
+
+  .kwh_style_container {
+    margin-top: 170px;
+    width: 100%;
+    .title_container {
+      .title {
+        font-weight: 500;
+      }
+    }
+    .martial_style_container {
+      margin-top: 85px;
+    }
+  }
+  
+  .screenshot_container {
+    margin-top: 150px;
+    width: 100%;
+    .title_container {
+      .title {
+        font-weight: 500;
+      }
+    }
+    .screenshot_wrapper {
+      margin-top: 54px;
+      width: 100%;
+      max-width: 900px;
+      min-height: 700px;
+      flex-wrap: wrap;
+      @include flex-style(space-around, center);
+      >img {
+        width: 70%;
+      }
+    }
+  }
+}
+
+@include media("<=phone") {
+  .kwh_contents_container {
+    .kwonho_ch_bg--img {
+      width: 226.08px;
+      height: 173.04px;
+      background-position: top center;
+      background-size: cover;
+    }
+    .kwonho_ch_img {
+      display: none;
+    }
+    .keyword_container {
+      .title_container {
+        margin-top: 64px;
+        padding-left: 31px;
+      }
+      .keyword_box_container {
+        flex-wrap: wrap;
+        .keyword_box_wrapper {
+          padding-left: 15px;
+          padding-right: 15px;
+          margin-left: 0;
+          height: 119px;
+          margin-bottom: 15px;
+          .keyword_desc {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+    .worldview_container {
+      margin-top: 76px;
+      .title_container {
+        padding-left: 31px;
+      }
+      .khw_pyramid_img_wrapper {
+        margin-top: 27px;
+        .khw_pyramid {
+          width: 254px;
+        }
+      }
+      .pyramid_desc {
+        width: 85%;
+        padding-left: 31px;
+        padding-right: 31px;
+      }
+    }
+    .kwh_style_container {
+      margin-top: 86px;
+      
+      .title_container {
+        padding-left: 31px;
+      }
+      .martial_style_container {
+        flex-direction: column;
+        @include flex-style(center, center);
+        .kwhStyle_wrapper:nth-child(1) {
+          text-align: center;
+          padding-top: 18px;
+          margin-top: 280px;
+          width: 258px;
+          min-height: 320px;
+          flex-wrap: wrap;
+          .img_wrapper-right {
+            .character-0 {
+              display: none;
+            }
+            .character-1 {
+              width: 75.79px;
+            }
+          }
+          .img_wrapper-left {
+            position: absolute;
+            left: initial;
+            bottom: initial;
+            top: -192px;
+            margin: auto;
+            width: 75.79px;
+            height: 192px;
+            .character-0 {
+              width: 85.46px;
+            }
+          }
+          .kwhStyle_desc_wrapper {
+            padding-left: 23px;
+            padding-right: 23px;
+            position: relative;
+            flex-direction: column;
+            @include flex-style(center, center);
+            .difficulties_wrapper {
+              @include flex-style(center, center);
+            }
+          }
+          .left {
+            left: initial;
+          }
+        }
+        .kwhStyle_wrapper:nth-child(2) {
+          text-align: center;
+          padding-top: 18px;
+          margin-top: 180px;
+          width: 258px;
+          min-height: 400px; 
+          flex-wrap: wrap;
+          .img_wrapper-right {
+            position: absolute;
+            left: initial;
+            bottom: initial;
+            top: -116px;
+            margin: auto;
+            width: 85.46px;
+            height: 158px;
+            right: initial;
+            .character-0 {
+              display:none;
+            }
+            .character-1 {
+              width: 75.79px;
+            }
+          }
+          .kwhStyle_desc_wrapper {
+            position: relative;
+            padding-left: 23px;
+            padding-right: 23px;
+            flex-direction: column;
+            @include flex-style(center, center);
+            .difficulties_wrapper {
+              @include flex-style(center, center);
+            }
+          }
+          .right {
+            left: initial
+          }
+        }
+        .kwhStyle_wrapper:nth-child(3) {
+          text-align: center;
+          padding-top: 18px;
+          margin-top: 180px;
+          width: 258px;
+          min-height: 430px;
+          flex-wrap: wrap;
+          .img_wrapper-left {
+            position: absolute;
+            left: initial;
+            bottom: initial;
+            top: -116px;
+            margin: auto;
+            width: 85.46px;
+            height: 158px;
+            right: initial;
+            .character-0 {
+              height: 141px;
+              width: 77.76px;
+            }
+            .character-1 {
+              display: none;
+            }
+          }
+          .kwhStyle_desc_wrapper {
+            position: relative;
+            padding-left: 23px;
+            padding-right: 23px;
+            flex-direction: column;
+            @include flex-style(center, center);
+            .difficulties_wrapper {
+              @include flex-style(center, center);
+            }
+          }
+          .left {
+            left: initial
+          }
+        }
+        .kwhStyle_wrapper:nth-child(4) {
+          text-align: center;
+          padding-top: 18px;
+          margin-top: 180px;
+          width: 258px;
+          min-height: 370px;
+          flex-wrap: wrap;
+          .img_wrapper-right {
+            position: absolute;
+            left: initial;
+            bottom: initial;
+            top: -138px;
+            margin: auto;
+            width: 85.46px;
+            height: 158px;
+            right: initial;
+            .character-0 {
+              display: none;
+            }
+            .character-1 {
+              height: 159px;
+              width: 98.19px;
+            }
+          }
+          .kwhStyle_desc_wrapper {
+            position: relative;
+            padding-left: 23px;
+            padding-right: 23px;
+            flex-direction: column;
+            @include flex-style(center, center);
+            .difficulties_wrapper {
+              @include flex-style(center, center);
+            }
+          }
+          .right {
+            left: initial
+          }
+        }
+        .kwhStyle_wrapper:nth-child(5) {
+          text-align: center;
+          padding-top: 18px;
+          margin-top: 180px;
+          width: 258px;
+          min-height: 460px;
+          flex-wrap: wrap;
+          .img_wrapper-left {
+            position: absolute;
+            left: initial;
+            bottom: initial;
+            top: -158px;
+            margin: auto;
+            width: 85.46px;
+            height: 158px;
+            right: initial;
+            .character-0 {
+              height: 184px;
+              width: 131.58px;
+            }
+            .character-1 {
+              display: none;
+            }
+          }
+          .kwhStyle_desc_wrapper {
+            position: relative;
+            padding-left: 23px;
+            padding-right: 23px;
+            flex-direction: column;
+            @include flex-style(center, center);
+            .difficulties_wrapper {
+              @include flex-style(center, center);
+            }
+          }
+          .left {
+            left: initial
+          }
+        }
+      }
+    }
+    .screenshot_container {
+        margin-top: 99px;
+        .title_container {
+          padding-left: 31px;
+        }
+      }
+  }
+}

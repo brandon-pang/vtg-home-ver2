@@ -1,0 +1,36 @@
+@import "utils";
+
+.menu_container {
+  cursor: pointer;
+  width: 100%;
+  max-width: 603px;
+  @include flex-style(space-between, center);
+  .gnb_element {
+    position: relative;
+    flex-direction: column;
+    @include flex-style(center, center);
+    @include notoSans-style(17px, 300, 23px, #bbbbbb);
+    > a{
+      color: #bbbbbb;
+      @include flex-style(center, center);
+    }
+    &:hover {
+      > a {
+        color: #fff;
+      }
+    }
+    .selected {
+      color: #fff;
+      .orange_bottom {
+        position: absolute;
+        bottom: -14px;
+        height: 2px;
+        left: 50%;
+        width: 30px;
+        background-color: #ff8300;
+        margin: auto;
+        transform: translate(-50%, 0)
+      }
+    }
+  }
+}

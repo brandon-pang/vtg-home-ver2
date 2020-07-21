@@ -1,0 +1,21 @@
+@import "utils";
+
+@include media("<=phone") {
+  .hire_list_wrapper {
+    margin-top: 25px;
+    flex-direction: column;
+    @include flex-style(center, flex-start);
+    .hire_header {
+      @include flex-style(center, flex-start);
+      .number {
+        @include notoSans-kr-style(18px, 500, 27px, #1c1c1c);
+      }
+      .title {
+        @include notoSans-kr-style(18px, 300, 27px, #1c1c1c);
+      }
+    }
+    .hire_list {
+      margin-top: 12px;
+    }
+  }
+}

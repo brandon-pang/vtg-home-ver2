@@ -1,0 +1,23 @@
+@import 'utils';
+
+
+[class*="character_wrapper-"] {
+  position: absolute;
+  margin: 0 auto;
+  width: 300px;
+}
+
+[class*="ch_dialogue-"] {
+  position: absolute;
+  padding: 10px;
+  background-color: #1C1C1C;
+}
+
+[class*="-img"] {
+  //z-index: 2;
+}
+
+.dialogue {
+  @include notoSans-kr-style(14px, 300, 20px, #fff);
+}
+

@@ -1,0 +1,153 @@
+@import "utils";
+
+.game_card { 
+  position: relative;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-left: 5px;
+  box-shadow: 7px 7px 15px 0px rgba(0, 0, 0, 0.3);
+  width: 360px;
+  height: 485px;
+  border-radius: 20px;
+  flex-direction: column;
+  overflow: hidden;
+  @include flex-style(flex-start, center);
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.3);
+    .game_card_bg {
+      transform: scale(1.1);
+    }
+  }
+  .game_card_bg {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    //background-repeat: no-repeat; 
+    position: absolute;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+  }
+  .notice_wrapper {
+    height: 35px;
+    width: 125px;
+    margin-top: 29px;
+    margin-left: 209px;
+    z-index: 5;
+    border: 0.5px solid rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    @include flex-style(center, center);
+    .notice {
+      opacity: 0.7;
+      padding-left: 13px;
+      @include notoSans-style(16px, 500, 19px, #fff);
+    }
+  }
+  .notice_wrapper_hide {
+    height: 35px;
+    width: 125px;
+    margin-top: 29px;
+    margin-left: 209px;
+  }
+  .coming_soon {
+    position: absolute;
+    top: 115px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 5;
+    width: 106px;
+    height: 84px;
+    @include notoSans-style(25px, normal, 42px, #fff);
+  }
+  .game_card_contents {
+    position: absolute;
+    top: 298px;
+    left: 40px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 320px;
+    z-index: 5;
+    .title {
+      @include notoSans-kr-style(34px, 500, 40px, #fff);
+    }
+    .subtitle {
+      margin-bottom: 17px;
+      @include notoSans-kr-style(16px, 300, 24px, #fff);
+    }
+    .btn {
+      cursor: pointer;
+      height: 30px;
+      width: 106px;
+      border: 1px solid #ffffff;
+      border-radius: 5px;
+      text-transform: uppercase;
+      @include flex-style(center, center);
+      @include notoSans-style(14px, 300, 19px, #fff);
+    }
+  }
+}
+
+
+@include media("<=tablet") {
+  .game_card {
+    width: 320px;
+    .game_card_contents {
+      max-width: 270px;
+    }
+  }
+}
+
+@include media("<=phone") {
+  .game_card {
+    width: 200px;
+    height: 264px;
+    .notice_wrapper {
+      height: 35px;
+      width: 125px;
+      margin-top: 29px;
+      margin-left: 209px;
+      z-index: 5;
+      border: 0.5px solid rgba(255, 255, 255, 0.7);
+      border-radius: 5px;
+      background-color: rgba(0, 0, 0, 0.3);
+      @include flex-style(center, center);
+      .notice {
+        opacity: 0.7;
+        padding-left: 13px;
+        @include notoSans-style(16px, 500, 19px, #fff);
+      }
+    }
+    .notice_wrapper_hide {
+      height: 35px;
+      width: 125px;
+      margin-top: 29px;
+      margin-left: 209px;
+    }
+    .coming_soon {
+      top: 35px;
+      @include notoSans-style(20px, normal, 42px, #fff);
+    }
+    .game_card_contents {
+      top: 143px;
+      left: 16px;
+      width: 100%;
+      z-index: 5;
+      .title {
+        @include notoSans-kr-style(15px, 500, 29px, #fff);
+      }
+      .subtitle {
+        margin-bottom: 17px;
+        @include notoSans-kr-style(14px, 300, 20px, #fff);
+      }
+    }
+  }
+}

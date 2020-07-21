@@ -1,0 +1,33 @@
+@import 'utils';
+
+.controller_container {
+  z-index: 999;
+  position: fixed;
+  width: 10px;
+  right: 40px;
+  height: 100%;
+  flex-direction: column;
+  @include flex-style(center, center);
+  .nav_dot {
+    cursor: pointer;
+    margin-bottom: 12px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: rgba(134,134,134,0.5);
+  }
+  .nav_dot_active {
+    cursor: pointer;
+    margin-bottom: 12px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #FF8300;
+  }
+}
+
+@include media('<=tablet') {
+  .controller_container {
+    display: none;
+  }
+}

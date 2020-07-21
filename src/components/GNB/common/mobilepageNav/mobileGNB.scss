@@ -1,0 +1,70 @@
+@import "utils";
+
+@include media("<=tablet") {
+  .menu_container {
+    box-shadow: -3px 0 10px 0 rgba(0,0,0,0.3);
+    position: absolute;
+    top:0;
+    right: -500px;
+    padding-right: 0;
+    width: 500px;
+    height: 100vh;
+    background: #000;
+    cursor: pointer;
+    flex-direction: column;
+    @include flex-style(flex-start, center);
+    .navVertigoLogo {
+      margin-top: 30px;
+    }
+    .mobileGNB_wrapper:nth-child(2) {
+      margin-top: 71px;
+      border-top: 1px solid #54565a;
+    }
+    .mobileGNB_wrapper {
+      border-bottom: 1px solid #54565a;
+      width: 410px;
+      height: 77px;
+      position: relative;
+      flex-direction: column;
+      @include flex-style(center, flex-start);
+      a {
+        width: 100%;
+        display: flex;
+        @include notoSans-style(22px, 300, 30px, #fff);
+      }
+      .selected {
+        color: #ff8300;
+      }
+      .mobile_element {
+        >a {
+          .orange_bottom {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media("<=phone") {
+  .menu_container {
+    width: 100%;
+    .navVertigoLogo {
+      margin-top: 11px;
+    }
+    .mobileGNB_wrapper:nth-child(2) {
+      margin-top: 36px;
+    }
+    .mobileGNB_wrapper {
+      border-bottom: 1px solid #54565a;
+      width: 258px;
+      height: 57px;
+      position: relative;
+      flex-direction: column;
+      @include flex-style(center, flex-start);
+      a {
+        @include notoSans-style(16px, 300, 22px, #fff);
+      }
+    }
+  }
+}

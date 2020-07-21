@@ -1,0 +1,27 @@
+@mixin flex-style($hAlign, $vAlign) {
+  display: flex;
+  @if $hAlign == "flex-start" {
+    justify-content: $hAlign;
+    -webkit-box-align: inherit;
+    -ms-flex-align: inherit;
+  } @else {
+    justify-content: $hAlign;
+  }
+  align-items: $vAlign;
+}
+
+@mixin notoSans-style($fontSize, $fontWeight, $lineHeight, $fontColor) {
+  font-family: $notoSans-font;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+  color: $fontColor;
+}
+
+@mixin notoSans-kr-style($fontSize, $fontWeight, $lineHeight, $fontColor) {
+  font-family: $notoSans-kr;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+  color: $fontColor;
+}

@@ -1,0 +1,63 @@
+@import "utils";
+
+.listContainer {
+  width: 100%;
+  @include flex-style(flex-start, center);
+  .list_header {
+    @include flex-style(flex-start, center);
+    .list_number {
+      margin-right: 10px;
+      @include notoSans-style(34px, 300, 46px, #bbb);
+    }
+    .list_title {
+      margin-right: 30px;
+      @include notoSans-kr-style(22px, 500, 33px, #1c1c1c);
+    }
+  }
+
+  .list_desc {
+    width: 100%;
+    max-width: 680px;
+    @include notoSans-kr-style(16px, 300, 24px, #858585);
+  }
+}
+
+@include media("<=tablet") {
+  .listContainer {
+    max-width: 570px;
+    .list_header {
+      .list_number {
+        @include notoSans-style(28px, 300, 38px, #bbb);
+      }
+      .list_title {
+        width: 81px;
+        @include notoSans-kr-style(18px, 500, 27px, #1c1c1c);
+      }
+    }
+    .list_desc {
+      max-width: 405px;
+      @include notoSans-kr-style(14px, 300, 26px, #858585);
+    }
+  }
+}
+
+@include media("<=phone") {
+  .listContainer {
+    max-width: 240px;
+    flex-direction: column;
+    .list_header {
+      width: 100%;
+      max-width: 240px;
+      .list_number {
+        @include notoSans-style(30px, 300, 41px, #bbb);
+      }
+      .list_title {
+        @include notoSans-kr-style(18px, 500, 27px, #1c1c1c);
+      }
+    }
+    .list_desc {
+      max-width: 240px;
+      @include notoSans-kr-style(14px, 300, 24px, #858585);
+    }
+  }
+}

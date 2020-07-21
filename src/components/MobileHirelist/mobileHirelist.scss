@@ -1,0 +1,43 @@
+@import 'utils';
+
+.mobile_list_wrapper {
+  cursor: pointer;
+  margin-top: 15px;
+  width: 240px;
+  height: 115px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+  .mobile_list_header {
+    position: relative;
+    width: 100%;
+    height: 46px;
+    background-color: #fff;
+    @include flex-style(flex-start, center);
+    .hire_title {
+      width: 100%;
+      max-width: 200px;
+      margin-left: 20px;
+      @include notoSans-kr-style(14px, 500, 20px, #1c1c1c);
+    }
+    .mid_arrow {
+      position: absolute;
+      right: 12.5px;
+    }
+  }
+  .mobile_list_body {
+    height: 68.38px;
+    width: 100%;
+    background-color: #F6F6F6;
+    flex-direction: column;
+    @include flex-style(center, flex-start);
+    .hire_team {
+      margin-left: 20px;
+      @include notoSans-style(14px, 300, 19px, #858585);
+    }
+    .hire_location {
+      margin-top: 6px;
+      margin-left: 20px;
+      @include notoSans-style(14px, 300, 19px, #ee3800);
+    }
+  }
+}

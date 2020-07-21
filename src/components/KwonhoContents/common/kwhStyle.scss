@@ -1,0 +1,72 @@
+@import "utils";
+
+.kwhStyle_wrapper {
+  position: relative;
+  margin-bottom: 24px;
+  padding-top: 41px;
+  width: 100%;
+  height: 300px;
+  max-width: 920px;
+  border-radius: 20px;
+  background-color: #F6F6F6;
+  @include flex-style(center, flex-start);
+  .img_wrapper-left {
+    position: absolute;
+    left: 32px;
+    bottom: 0;
+  }
+  .img_wrapper-right {
+    position: absolute;
+    right: 36px;
+    bottom: 0;
+  }
+  .kwhStyle_desc_wrapper {
+    position: absolute;
+    width: 100%;
+    max-width: 559px;
+    flex-direction: column;
+    @include flex-style(center, flex-start);
+    .kwhStyle_title {
+      @include notoSans-kr-style(22px, 500, 31px, #1c1c1c);
+    }
+    .difficulties_wrapper {
+      margin-top: 14px;
+      width: 100%;
+      @include flex-style(flex-start, center);
+      .difficulties_title {
+        margin-right: 7px;
+        @include notoSans-kr-style(16px, 500, 31px, #1c1c1c);
+      }
+      
+    }
+    .kwhStyle_desc {
+       width: 100%;
+      max-width: 559px;
+      margin-top: 5px;
+      @include notoSans-kr-style(16px, 300, 31px, #1c1c1c);
+    }
+  }
+  .left {
+    left: 233px;
+  }
+  .right {
+    left: 61px;
+  }
+}
+
+@include media("<=tablet") {
+  .kwhStyle_wrapper {
+    padding-top: 20px;
+    .kwhStyle_desc_wrapper {
+      max-width: 445px;
+      .kwhStyle_desc {
+        max-width: 350px;
+        font-size: 13px;
+        line-height: 28px;
+      }
+    }
+    .left {
+      left: 170px;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@import "utils";
+
+.btn_container {
+  margin-top: 120px;
+  margin-bottom: 148px;
+  width: 100%;
+  max-width: 379px;
+  height: 70px;
+  border-radius: 40px;
+  background-color: #29b06d;
+  box-shadow: 5px 7px 15px 0 rgba(0, 0, 0, 0.2);
+  @include flex-style(center, center);
+  p {
+    margin-left: 12px;
+    margin-right: 16px;
+    @include notoSans-kr-style(16px, 300, 24px, #fff);
+  }
+  &:hover {
+    transition: all 0.3s ease;
+    //transform: scale(1.05);
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@include media("<=phone") {
+  .btn_container {
+    margin-top: 0;
+    max-width: 220px;
+    height: 50px;
+    .papayaLogo {
+      width: 108px;
+    }
+    p {
+      display: none;
+    }
+    .right_arrow {
+      margin-left: 12px;
+    }
+  }
+}

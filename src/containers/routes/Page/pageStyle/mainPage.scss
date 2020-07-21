@@ -1,0 +1,571 @@
+@import "utils";
+
+.green_font {
+  @include notoSans-kr-style(16px, 400, 24px, #29B06D);
+}
+
+// .footer_container:nth-child(3) {
+//   display: none;
+// }
+.main_page_container {
+  width: 100%;
+}
+.main_slide1 {
+  width: 100%;
+  height: 100vh;
+  .mastheadMotion {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    
+    .masthead_bg {
+      width: 100%;
+      height: 100%;
+      background-position: top center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      @include flex-style(center, center);
+      .dim_layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+      .masthead_header {
+        z-index: 2;
+        width: 100%;
+        max-width: 800px;
+        flex-direction: column;
+        @include flex-style(center, center);
+        .masthead--title {
+          z-index: 2;
+          text-align: center;
+          width: 100%;
+          @include notoSans-style(50px, bold, 86px, #fff);
+        }
+        .masthead--subtitle {
+          z-index: 2;
+          margin-top: 60px;
+          width: 100%;
+          text-align: center;
+          @include notoSans-style(16px, bold, 22px, #ff8300);
+        }
+      }
+      .masthead--arrow {
+        position: absolute;      
+        width: 13px;
+        bottom: 50px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: 2;
+      }
+    }
+  }
+  .toNextSlide {
+    position: absolute;
+    bottom: 50px;
+    z-index: 6;
+    left: 50%;
+    transform: translate(-50%,0);
+  }
+}
+  .main_slide2 {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(250.85deg, #ffc835 -20%, #ff8300 85%);
+    .subHead_container {
+      padding-bottom: 2em;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      @include flex-style(center, center);
+      .subHead_contents {
+        width: 100%;
+        max-width: 600px;
+        flex-direction: column;
+        @include flex-style(center, flex-start);
+        .subHead_title {
+          margin-top: 30px;
+          width: 100%;
+          text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+          @include notoSans-kr-style(34px, bold, 50px, #1c1c1c);
+        }
+        .subHead_desc {
+          margin-top: 30px;
+          width: 100%;
+          @include notoSans-kr-style(16px, 300, 29px, #fff);
+        }
+        .subHead_stats {
+          margin-top: 41px;
+          width: 100%;
+          @include flex-style(space-between, center);
+          .stats_countries-wrapper {
+            width: 100%;
+            max-width: 90px;
+            flex-direction: column;
+            @include flex-style(center, center);
+            .stats_countries-title {
+              text-align: center;
+              margin-bottom: 7px;
+              width: 100%;
+              @include notoSans-style(30px, bold, 29px, #fff);
+            }
+            .stats_countries-desc {
+              text-align: center;
+              width: 100%;
+              text-transform: uppercase;
+              @include notoSans-style(16px, 300, 29px, #fff);
+            }
+          }
+          .stats_players-wrapper {
+            width: 100%;
+            max-width: 180px;
+            flex-direction: column;
+            @include flex-style(center, center);
+            .stats_players-title {
+              text-align: center;
+              margin-bottom: 7px;
+              width: 100%;
+              @include notoSans-style(30px, bold, 29px, #fff);
+            }
+            .stats_players-desc {
+              text-align: center;
+              width: 100%;
+              text-transform: uppercase;
+              @include notoSans-style(16px, 300, 29px, #fff);
+            }
+          }
+          .stats_offices-wrapper {
+            width: 100%;
+            max-width: 62px;
+            flex-direction: column;
+            @include flex-style(center, center);
+            .stats_offices-title {
+              text-align: center;
+              margin-bottom: 7px;
+              width: 100%;
+              @include notoSans-style(30px, bold, 29px, #fff);
+            }
+            .stats_offices-desc {
+              text-align: center;
+              width: 100%;
+              text-transform: uppercase;
+              @include notoSans-style(16px, 300, 29px, #fff);
+            }
+          }
+        }
+      }
+      .navDownContainer {
+        position: absolute;
+        width: 13px;
+        left: 50%;
+        bottom: 60px;
+        transform: translate(-50%,0);
+      }
+    }
+    .toNextSlide {
+      display: none;
+    }
+  }
+.main_body_container {
+  padding-left: 128px;
+  padding-top: 100px;
+}
+.main_slide3 {
+  width: 100%;
+  .games_container {
+    position: relative;
+    width: auto;
+    flex-direction: column;
+    @include flex-style(flex-start, flex-start);
+    .games_title {
+      @include notoSans-kr-style(16px, 300, 24px, #1c1c1c);
+    }
+    .develop_game_card_container {
+      width: 100%; 
+    }
+    .navDownContainer {
+      position: absolute;
+      left: 50%;
+      bottom: -5%;
+      transform: translate(-50%,0);
+    }
+    .toNextSlide {
+      display: none;
+    }
+  }
+}
+
+.main_slide4 {
+  width: 100%;
+  .publishing_container {
+    position: relative;
+    margin-top: 180px;
+    width: auto;
+    flex-direction: column;
+    @include flex-style(flex-start, flex-start);     
+    .publishing_title {
+      @include notoSans-kr-style(16px, 300, 24px, #1c1c1c);
+    }    
+    .publish_game_card_container {
+      width: 100%;
+    }
+    .papaya_btn_wrapper {
+      width: 100%;
+      @include flex-style(center, center);
+      .btn_container {
+        margin-top: 0px;
+      }
+    }
+    .navDownContainer {
+      position: absolute;
+      left: 50%;
+      bottom: 2%;
+      transform: translate(-50%,0);
+    }
+    .toNextSlide {
+      display: none;
+    }
+  }
+}
+
+.main_slide5 {
+  width: 100%;
+  .news_container {
+    margin-top: 15px;
+    width: auto;
+    flex-direction: column;
+    @include flex-style(flex-start, flex-start);
+    .news_title {
+      @include notoSans-kr-style(16px, 300, 24px, #1c1c1c);
+    }
+    .main_title_container {
+      margin-bottom: 15px;
+    }
+    .papaya_btn {
+      height: 70px;
+      width: 379px;
+      border-radius: 40px;
+      background-color: #29b06d;
+      box-shadow: 5px 7px 15px 0 rgba(0, 0, 0, 0.2);
+      @include notoSans-kr-style(16px, 300, 24px, #fff);
+      @include flex-style(center, center);
+    }  
+  }
+}
+.toTopSlide_wrapper {
+  margin-bottom: 153px;
+  width: 100%;
+  @include flex-style(center, center);
+}
+.main_slide6 {
+  height: 13% !important;
+  .footer_container {
+    max-height: 250px;
+  }
+}
+
+
+@include media("<=tablet") {
+  .main_slide1 {
+    .mastheadMotion {
+      .masthead_bg {
+        .masthead_header {
+          .masthead--title {
+            max-width: 600px;
+            @include notoSans-style(40px, bold, 55px, #fff);
+          }
+          .masthead--subtitle {
+            margin-top: 87px;
+            @include notoSans-style(19px, bold, 19px, #ff8300);
+          }
+          .masthead--arrow {
+            z-index: 2;
+            margin-top: 283px;
+          }
+        }
+      }
+    }
+  }
+
+  .main_slide2 {
+    .subHead_container {
+      .subHead_contents {
+        width: 100%;
+        max-width: 600px;
+        flex-direction: column;
+        @include flex-style(center, flex-start);
+        .subHead_title {
+          @include notoSans-kr-style(28px, bold, 41px, #1c1c1c);
+        }
+        .subHead_desc {
+          margin-top: 24px;
+          @include notoSans-kr-style(14px, 300, 26px, #fff);
+        }
+        .subHead_stats {
+          margin-top: 84px;
+          .stats_countries-wrapper {
+            .stats_countries-title {
+              margin-bottom: 12px;
+              @include notoSans-style(26px, bold, 29px, #fff);
+            }
+            .stats_countries-desc {
+              @include notoSans-style(14px, 300, 19px, #fff);
+            }
+          }
+          .stats_players-wrapper {
+            .stats_players-title {
+              margin-bottom: 12px;
+              @include notoSans-style(26px, bold, 29px, #fff);
+            }
+            .stats_players-desc {
+              @include notoSans-style(14px, 300, 19px, #fff);
+            }
+          }
+          .stats_offices-wrapper {
+            .stats_offices-title {
+              margin-bottom: 12px;
+              @include notoSans-style(26px, bold, 29px, #fff);
+            }
+            .stats_offices-desc {
+              @include notoSans-style(14px, 300, 19px, #fff);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .main_body_container {
+    padding-top: 100px;
+    padding-left: 62px;
+  }
+
+  .main_slide3 {
+    .games_container {
+      .games_title {
+        @include notoSans-kr-style(14px, 300, 20px, #1c1c1c);
+      }
+      .main_title_container {
+        margin-bottom: 30px;
+      }
+      .develop_game_card_container {
+        width: 100%; 
+      }
+    }
+  }
+    
+  .main_slide4 {
+    .publishing_container {
+      .publishing_title {
+        @include notoSans-kr-style(14px, 300, 20px, #1c1c1c);
+      }
+      .main_title_container {
+        margin-bottom: 40px;
+      }
+      .publish_game_card_container {
+        width: 100%;
+      }
+      
+      .papaya_btn_wrapper {
+        width: 100%;
+        @include flex-style(center, center);
+      }
+      
+    }
+  }
+
+  .main_slide5 {
+    .news_container {
+      .news_title {
+        @include notoSans-kr-style(14px, 300, 20px, #1c1c1c);
+      }
+      .papaya_btn {
+        height: 70px;
+        width: 379px;
+        border-radius: 40px;
+        background-color: #29b06d;
+        box-shadow: 5px 7px 15px 0 rgba(0, 0, 0, 0.2);
+        @include notoSans-kr-style(16px, 300, 24px, #fff);
+        @include flex-style(center, center);
+      }  
+    }
+  }
+}
+
+@include media("<=phone") {
+  .main_slide1 {
+    .mastheadMotion {
+      .masthead_bg {
+        .masthead_header {
+          .masthead--title {
+            max-width: 200px;
+            @include notoSans-style(25px, bold, 34px, #fff);
+          }
+          .masthead--subtitle {
+            margin-top: 44px;
+            @include notoSans-style(8px, bold, 11px, #ff8300);
+          }
+          .masthead--arrow {
+            z-index: 2;
+            margin-top: 65px;
+          }
+        }
+      }
+    }
+  }
+  
+  .main_slide2 {
+    .subHead_container {
+      @include flex-style(center, flex-start);
+      .subHead_contents {
+        padding-bottom: 3em;
+        @include flex-style(center, center);
+        .vSymbol {
+          width: 40px;
+        }
+        .subHead_title {
+          width: 100%;
+          max-width: 300px;
+          text-align: center;
+          @include notoSans-kr-style(20px, bold, 29px, #1c1c1c);
+        }
+        .subHead_desc {
+          width: 100%;
+          max-width: 233px;
+          margin-top: 20px;
+          text-align: center;
+          @include notoSans-kr-style(12px, 300, 22px, #fff);
+        }
+        .subHead_stats {
+          margin-top: 60px;
+          flex-wrap: nowrap;
+          max-width: 310px;
+          @include flex-style(space-between, center);
+          .stats_countries-wrapper {
+            .stats_countries-title {
+              margin-bottom: 4px;
+              @include notoSans-style(18px, bold, 29px, #fff);
+            }
+            .stats_countries-desc {
+              @include notoSans-style(12px, 300, 17px, #fff);
+            }
+          }
+          .stats_players-wrapper {
+            margin-top: 0;
+            .stats_players-title {
+              margin-bottom: 4px;
+              @include notoSans-style(18px, bold, 29px, #fff);
+            }
+            .stats_players-desc {
+              @include notoSans-style(12px, 300, 17px, #fff);
+            }
+          }
+          .stats_offices-wrapper {
+            margin-top: 0;
+            .stats_offices-title {
+              margin-bottom: 4px;
+              @include notoSans-style(18px, bold, 29px, #fff);
+            }
+            .stats_offices-desc {
+              @include notoSans-style(12px, 300, 17px, #fff);
+            }
+          }
+        }
+      }
+    }
+    .toNextSlide {
+      display: block;
+      position: absolute;
+      bottom: 10px;
+      z-index: 6;
+      left: 50%;
+      transform: translate(-50%,0);
+    }
+  }
+  .main_body_container {
+    padding-left: 33px;
+  }
+  .main_slide3 {
+    .games_container {
+      .games_title {
+        @include notoSans-kr-style(14px, 300, 20px, #1c1c1c);
+      }
+      .main_title_container {
+        margin-bottom: 0;
+      }
+      .develop_game_card_container {
+        width: 100%; 
+      }
+      .toNextSlide {
+        display: block;
+        position: absolute;
+        bottom: -40px;
+        z-index: 6;
+        left: 50%;
+        transform: translate(-50%,0);
+      }
+    }
+  }
+  
+  .main_slide4 {
+    .publishing_container {
+      .publishing_title {
+        @include notoSans-kr-style(14px, 300, 20px, #1c1c1c);
+        span {
+          font-weight: bold;
+          color: #29b06d;
+        }
+      }
+      .main_title_container {
+        margin-bottom: 0;
+      }
+      .publish_game_card_container {
+        width: 100%;
+      }
+      
+      .papaya_btn_wrapper {
+        width: 100%;
+        @include flex-style(center, center);
+        .btn_container {
+          margin-top: 0;
+        }
+      }
+      .toNextSlide {
+        display: block;
+        position: absolute;
+        bottom: 100px;
+        z-index: 6;
+        left: 50%;
+        transform: translate(-50%,0);
+      }
+    }
+  }
+
+  .main_slide5 {
+    .news_container {
+      margin-top: 0;
+      .news_title {
+        @include notoSans-kr-style(14px, 300, 20px, #1c1c1c);
+      }
+      .main_title_container {
+        margin-bottom: 0;
+      }
+      .papaya_btn {
+        height: 70px;
+        width: 379px;
+        border-radius: 40px;
+        background-color: #29b06d;
+        box-shadow: 5px 7px 15px 0 rgba(0, 0, 0, 0.2);
+        @include notoSans-kr-style(16px, 300, 24px, #fff);
+        @include flex-style(center, center);
+      }  
+    }
+  }
+}

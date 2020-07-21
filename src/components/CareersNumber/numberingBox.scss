@@ -1,0 +1,40 @@
+@import "utils";
+
+.numberBox_wrapper {
+  width: 250px;
+  flex-direction: column;
+  @include flex-style(center, flex-start);
+  .top_wrapper {
+    margin-bottom: 10px;
+    @include flex-style(center, flex-end);
+    .number_1 {
+      opacity: 0.4;
+      @include notoSans-style(70px, 300, 96px, #ffc835);
+    }
+    .number_2 {
+      opacity: 0.7;
+      @include notoSans-style(70px, 300, 96px, #ffc835);
+    }
+    .number_3 {
+      @include notoSans-style(70px, 300, 96px, #ffc835);
+    }
+    .title {
+      padding-bottom: 10px;
+      @include notoSans-kr-style(34px, 300, 50px, #1c1c1c);
+    }
+  }
+  .desc {
+    width: 250px;
+    @include notoSans-kr-style(16px, 300, 37px, #858585);
+  }
+}
+
+@include media("<=phone") {
+  .numberBox_wrapper {
+    .top_wrapper {
+      .title {
+        font-size: 30px;
+      }
+    }
+  }
+}

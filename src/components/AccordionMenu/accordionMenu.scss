@@ -1,0 +1,175 @@
+@import 'utils';
+
+.accordion_master_wrapper {
+  width: 100%;
+  max-width: 1000px; 
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+  flex-direction: column;
+  @include flex-style(center, center);
+}
+.accordion_wrapper {
+  width: 100%;
+  height: 90px;
+  border-radius: 5px; 
+  background-color: #FFFFFF;
+  @include flex-style(flex-start, center);
+  .accordion_header {
+    width: 50%;
+    margin-left: 36px;
+    @include flex-style(flex-start, center);
+    @include notoSans-kr-style(18px, 500, 27px, #1c1c1c);
+  }
+  .accordion_subHeader {
+    width: 25%;
+    @include flex-style(center, center);
+    @include notoSans-style(18px, 300, 24px, #858585);
+  }
+  .accordion_location {
+    width: 20%;
+    //width: 200px;
+    text-align: center;
+    @include flex-style(flex-start, center);
+    @include notoSans-style(18px, 400, 24px, #b847d0);
+  }
+  .accordion_arrow_wrapper {
+    width: 10%;
+    transition: transform 0.2s;
+  }
+}
+
+.accordion_contents_container {
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 0 0 5px 5px;
+  .contents_wrapper {
+    padding-top: 24px;
+    padding-left: 36px;
+    width: 100%;
+    max-width: 817px;
+    @include notoSans-style(14px, 300, 22px, #1c1c1c);
+    .contents{
+      > p {
+        word-break: break-all;
+      }
+    }
+    .applyBtn_wrapper {
+      margin-top: 35px;
+      margin-bottom: 35px;
+      height: 44px;
+      width: 170px;
+      border: 1px solid #1c1c1c;
+      border-radius: 5px;
+      @include flex-style(flex-start, center);    
+      .email_address { 
+        text-transform: uppercase;
+        margin-left: 21px;
+        @include notoSans-style(16px, 500, 22px, #1c1c1c);
+      }
+      .email_arrow {
+        margin-left: 20px;
+        margin-right: 17px;
+      }
+    }
+  }
+}
+
+@include media("<=tablet") {
+  .accordion_master_wrapper {
+    .accordion_wrapper {
+      .accordion_subHeader {
+        font-size: 14px;
+      }
+    }
+    .accordion_contents_container {
+      .contents_wrapper {
+        max-width: 500px;
+      }
+    }
+  }
+}
+
+@include media("<=phone") {
+  .accordion_master_wrapper {
+    display: none;
+  }
+}
+
+// @include media("<=phone") {
+//   .accordion_wrapper {
+//     position: relative;
+//     margin-bottom: 15px;
+//     max-width: 100%;
+//     width: 240px;  
+//     height: 115px;
+//     border-radius: 5px; 
+//     background-color: #FFFFFF;
+//     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+//     flex-direction: column;
+//     @include flex-style(center, center);
+//     .accordion_header {
+//       width: 100%;
+//       margin-left: 0;
+//       text-align: center;
+//       @include flex-style(flex-start, center);
+//       @include notoSans-kr-style(14px, 500, 20px, #1c1c1c);
+//     }
+//     .accordion_subHeader {
+//       width: 100%;
+//       text-align: center;
+//       @include notoSans-style(14px, 300, 19px, #858585);
+//     }
+//     .accordion_location {
+//       width: 100%;
+//       text-align: center;
+//       @include flex-style(flex-start, center);
+//       @include notoSans-style(14px, 300, 19px, #EE3800);
+//     }
+//     .accordion_arrow_wrapper {
+//       margin-top: 20px;
+//       width: 24px;
+//       position: absolute;
+//       bottom: 10px;
+//       right: 10px;
+//     }
+//   }
+//   .accordion_contents_container {
+//     margin-bottom: 20px;
+//     width: 100%;
+//     max-width: 240px;
+//     border-radius: 0 0 5px 5px;
+//     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+//     .contents_wrapper {
+//       padding-top: 0;
+//       padding-left: 0;
+//       width: 100%;
+//       max-width: 240px;
+//       @include notoSans-style(14px, 300, 22px, #1c1c1c);
+//       .applyBtn_wrapper {
+//         margin-top: 35px;
+//         .email_container {
+//           width: 100%;
+//           max-width: 170px;
+//           flex-direction: column;
+//           @include flex-style(center, center);
+//           .email_address_btn {
+//             height: 44px;
+//             width: 170px;
+//             border: 1px solid #1c1c1c;
+//             border-radius: 5px;
+//             @include flex-style(flex-start, center);
+//             .email_address {
+//               text-transform: uppercase;
+//               margin-left: 21px;
+//               @include notoSans-style(16px, 500, 22px, #1c1c1c);
+//             }
+//             .email_arrow {
+//               margin-left: 20px;
+//               margin-right: 17px;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

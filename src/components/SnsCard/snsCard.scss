@@ -1,0 +1,227 @@
+@import "utils";
+
+[class*="sns_card_wrapper_"] {
+  position: relative;
+  width: 100%;
+  height: 475px;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  box-shadow: 2px 5px 15px 0px rgba(0, 0, 0, 0.2);
+  flex-direction: column;
+  @include flex-style(flex-start, flex-start);
+}
+
+.sns_card_wrapper_large {
+  margin-top: 30px;
+  max-width: 470px;
+  .card_header {
+    padding: 30px 30px 0 30px;
+    width: 100%;
+    max-width: 410px;
+    @include flex-style(center, center);
+    .img_wrapper {
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    .title_wrapper {
+      margin-left: 14px;
+      width: 100%;
+      .title {
+        text-transform: uppercase;
+        @include notoSans-style(14px, bold, 19px, #858585);
+      }
+      .date {
+        @include notoSans-style(14px, 300, 19px, #858585);
+      }
+    } 
+  }
+  .card_body {
+      width: 100%;
+      max-width: 410px;
+      padding-right: 30px;
+      padding-left: 30px;
+      
+      .contents {
+        height: 270px;
+        white-space: pre-wrap;
+        overflow: hidden;
+        .contents_title {
+          margin-bottom: 5px;
+          @include notoSans-style(16px, 800, 22px, #1c1c1c);
+        }
+        .contents_desc {
+          @include notoSans-style(16px, 300, 22px, #1c1c1c);
+          >p {
+            overflow: hidden;
+            text-overflow: ellipsis;
+              > img {
+              width: 400px;
+            }
+          }
+        }
+      }
+    }
+    .sns_wrapper {
+      margin-top: 5px;
+      padding-right: 30px;
+      padding-left: 30px;
+      width: 100%;
+      max-width: 410px;
+      @include flex-style(flex-start, center);
+      > a {
+        margin-right: 10px;
+      }
+    }
+    .sns_more_btn {
+      position: absolute;
+      bottom: 30px;
+      left: 30px;
+      display: block;
+      height: 30px;
+      width: 106px;
+      border: 1px solid #858585;
+      border-radius: 5px;
+      text-transform: uppercase;
+      @include flex-style(center, center);
+      @include notoSans-style(14px, 300, 19px, #858585);
+    }
+}
+
+.sns_card_wrapper_medium {
+    max-width: 360px;
+    &:hover {
+      box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.3);
+      transform: scale(1.05);
+    }
+    .card_header {
+      padding: 30px 30px 0 30px;
+      width: 100%;
+      @include flex-style(center, center);
+    .img_wrapper {
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    .title_wrapper {
+      margin-left: 14px;
+      width: 100%;
+      .title {
+        text-transform: uppercase;
+        @include notoSans-style(14px, bold, 19px, #858585);
+      }
+      .date {
+        @include notoSans-style(14px, 300, 19px, #858585);
+      }
+    } 
+  }
+  .card_body {
+      width: 100%;
+      max-width: 410px;
+      padding-right: 30px;
+      padding-left: 30px;
+      
+      .contents {
+        height: 270px;
+        white-space: pre-wrap;
+        overflow: hidden;
+        .contents_title {
+          @include notoSans-style(16px, 800, 22px, #1c1c1c);
+        }
+        .contents_desc {
+          @include notoSans-style(16px, 300, 22px, #1c1c1c);
+          >p {
+            overflow: hidden;
+            text-overflow: ellipsis;
+              > img {
+              width: 400px;
+            }
+          }
+        }
+      }
+    }
+    .sns_wrapper {
+      padding-right: 30px;
+      padding-left: 30px;
+      width: 100%;
+      max-width: 410px;
+      @include flex-style(flex-start, center);
+      > a {
+        margin-right: 10px;
+      }
+    }
+    .sns_more_btn {
+      position: absolute;
+      bottom: 30px;
+      left: 30px;
+      display: block;
+      height: 30px;
+      width: 106px;
+      border: 1px solid #858585;
+      border-radius: 5px;
+      text-transform: uppercase;
+      @include flex-style(center, center);
+      @include notoSans-style(14px, 300, 19px, #858585);
+    }
+  }
+
+@include media("<=tablet") {
+  .sns_card_wrapper_large {
+    max-width: 286px;
+    .card_header {
+      max-width: 250px;
+    }
+    .card_body {
+      max-width: 230px;
+    }
+  }
+}
+
+@include media("<=phone") {
+  .sns_card_wrapper_large {
+    width: 230px;
+    height: 345px;
+    .card_header {
+      padding-right: 18px;
+      padding-left: 18px;
+      max-width: 195px;
+    }
+    .card_body {
+      margin-top: 5px;
+      padding-right: 18px;
+      padding-left: 18px;
+      max-width: 195px;
+      .contents {
+        height: 111px;
+        .contents_title {
+          @include notoSans-style(12px, 800, 18px, #1c1c1c);
+        }
+        .contents_desc {
+          @include notoSans-style(12px, 300, 18px, #1c1c1c);
+          >p {
+            overflow: hidden;
+            text-overflow: ellipsis;
+              > img {
+              width: 400px;
+            }
+          }
+        }
+      }
+    }
+    .sns_wrapper {
+      margin-top: 10px;
+      padding-right: 18px;
+      padding-left: 18px;
+    }
+    .sns_more_btn {
+    left: 16px;
+    bottom: 18px;
+    }
+  }
+}

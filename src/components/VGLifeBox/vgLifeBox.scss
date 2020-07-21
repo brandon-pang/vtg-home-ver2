@@ -1,0 +1,189 @@
+@import "utils";
+
+.life_box_short {
+  padding-left: 3px;
+  padding-right: 3px;
+  height: 300px;
+  width: 300px;
+  border-radius: 20px;
+  background-color: #f6f6f6;
+  flex-direction: column;
+  @include flex-style(flex-start, center);
+  .box_icon {
+    margin-top: 49px;
+  }
+  .life_box_title {
+    margin-top: 11px;
+    text-align: center;
+    @include notoSans-kr-style(22px, 500, 33px, #1c1c1c);
+  }
+  .life_box_list {
+    margin-top: 5px;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    @include flex-style(center, center);
+    .list_content {
+      @include notoSans-kr-style(16px, 300, 33px, #858585);
+    }
+  }
+}
+
+.life_box_long {
+  padding-left: 3px;
+  padding-right: 3px;
+  height: 350px;
+  width: 300px;
+  border-radius: 20px;
+  background-color: #f6f6f6;
+  flex-direction: column;
+  @include flex-style(flex-start, center);
+  .box_icon {
+    margin-top: 49px;
+  }
+  .life_box_title {
+    text-align: center;
+    margin-top: 11px;
+    @include notoSans-kr-style(20px, 500, 33px, #1c1c1c);
+  }
+  .life_box_list {
+    margin-top: 5px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    flex-direction: column;
+    @include flex-style(center, center);
+    .list_content {
+      width: 100%;
+      max-width: 300px;
+      @include notoSans-kr-style(16px, 300, 33px, #858585);
+    }
+  }
+}
+
+@include media("<=tablet") {
+  .life_box_short {
+    margin-bottom: 20px;
+    height: 112px;
+    width: 570px;
+    flex-direction: row;
+    .box_icon {
+      width: 40px;
+      margin-left: 30px;
+      margin-right: 15px;
+      margin-top: 0;
+    }
+    .life_box_title {
+      width: 100%;
+      max-width: 150px;
+      margin-top: 0;
+      @include notoSans-kr-style(18px, 500, 27px, #1c1c1c);
+    }
+    .life_box_list {
+      margin-left: 15px;
+      margin-top: 0;
+      width: 100%;
+      flex-direction: column;
+      @include flex-style(center, flex-start);
+      .list_content {
+        text-align: left;
+        @include notoSans-kr-style(14px, 300, 26px, #858585);
+      }
+    }
+  }
+
+  .life_box_long {
+    padding: 1%;
+    margin-bottom: 20px;
+    height: 165px;
+    width: 570px;
+    flex-direction: row;
+    .box_icon {
+      width: 40px;
+      margin-left: 30px;
+      margin-right: 15px;
+      margin-top: 0;
+    }
+    .life_box_title {
+      width: 100%;
+      max-width: 150px;
+      margin-top: 0;
+      @include notoSans-kr-style(18px, 500, 27px, #1c1c1c);
+    }
+    .life_box_list {
+      margin-left: 15px;
+      margin-top: 0;
+      width: 100%;
+      flex-direction: column;
+      @include flex-style(center, flex-start);
+      .list_content {
+        text-align: left;
+        @include notoSans-kr-style(14px, 300, 26px, #858585);
+      }
+    }
+  }
+}
+
+@include media("<=phone") {
+  .life_box_short {
+    padding: 5%;
+    height: auto;
+    min-height: 220px;
+    width: 240px;
+    flex-direction: column;
+    @include flex-style(center, center);
+    .box_icon {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .life_box_title {
+      text-align: center;
+      margin-top: 16px;
+      max-width: 240px;
+      @include notoSans-kr-style(18px, 500, 27px, #1c1c1c);
+    }
+    .life_box_list {
+      margin-left: 0;
+      margin-top: 25px;
+      width: 100%;
+      flex-direction: column;
+      @include flex-style(center, center);
+      .list_content {
+        text-align: center;
+        @include notoSans-kr-style(14px, 300, 24px, #858585);
+      }
+    }
+  }
+  
+  .life_box_long {
+    padding: 5%;
+    height: auto;
+    min-height: 260px;
+    width: 240px;
+    flex-direction: column;
+    @include flex-style(center, center);
+    .box_icon {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .life_box_title {
+      margin-top: 0;
+      text-align: center;
+      margin-top: 16px;
+      max-width: 240px;
+      @include notoSans-kr-style(18px, 500, 27px, #1c1c1c);
+    }
+    .life_box_list {
+      margin-top: 0;
+      margin-left: 0;
+      margin-top: 25px;
+      width: 100%;
+      flex-direction: column;
+      @include flex-style(center, center);
+      .list_content {
+        text-align: center;
+        @include notoSans-kr-style(14px, 300, 24px, #858585);
+      }
+    }
+  }
+}

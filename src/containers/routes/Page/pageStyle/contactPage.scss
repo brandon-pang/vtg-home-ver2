@@ -1,0 +1,300 @@
+@import "utils";
+
+.contact_container {
+  width: 100%;
+  .dim_layer {
+    position: absolute;
+    width: 100%;
+    height: 650px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+  .masthead {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    @include flex-style(center, center);
+    .masthead--title {
+      z-index: 2;
+      text-align: center;
+      width: 100%;
+      max-width: 800px;
+      @include notoSans-style(50px, bold, 68px, #fff);
+    }
+    .masthead--subtitle {
+      z-index: 2;
+      margin-top: 60px;
+      width: 100%;
+      text-align: center;
+      @include notoSans-style(16px, bold, 22px, #ff8300);
+    }
+    .masthead--arrow {
+      position: absolute;      
+      width: 13px;
+      bottom: 50px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      z-index: 2;
+    }
+  }
+  .contact_contents {
+    width: 100%;
+    flex-direction: column;
+    @include flex-style(center, center);
+    .contact_title {
+      margin-top: 142px;
+      @include notoSans-kr-style(22px, 300, 33px, #1c1c1c);
+    }
+    .orange_short {
+      margin-top: 11px;
+      height: 2px;
+      width: 40px;
+      background-color: #ff8300;
+    }
+    .contact_us_container {
+      text-align: center;
+      width: 100%;
+      height: 174px;
+      background-color: #f6f6f6;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+      flex-direction: column;
+      @include flex-style(center, center);
+      @include notoSans-kr-style(16px, normal, 37px, #1c1c1c);
+    }
+    .email_wrapper {
+      margin-top: 117px;
+      flex-wrap: wrap;
+      max-width: 1036px;
+      width: 100%;
+      @include flex-style(space-around, center);
+    }
+
+    .send_email_container {
+      position: relative;
+      box-shadow: 
+        inset 0px 13px 8px -10px #CCC,
+        inset 0px -13px 8px -10px #CCC;
+      margin-top: 20px;
+      transition: height .3s ease;
+      overflow: hidden;
+      width: 100%;
+      height: 0;
+      background-color: rgba(247,247,247,0.6);
+      @include flex-style(center, center);
+      .close_img_wrapper {
+        background-color: #000;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+      }
+    }
+
+    .vertigo_contact_container {
+      margin-top: 245px;
+      width: 100%;
+      flex-direction: column;
+      @include flex-style(center, center);
+      .map_title {
+        @include notoSans-kr-style(22px, 300, 33px, #1c1c1c);
+      }
+      .map_orange_bar {
+        margin-top: 16px;
+        height: 2px;
+        width: 40px;
+        background-color: #ff8300;
+      }
+      .map_desc {
+        margin-top: 80px;
+        @include notoSans-kr-style(16px, 300, 24px, #1c1c1c);
+      }
+      .vertigo_map_container {
+        margin-top: 78px;
+        position: relative;
+        width: 100%;
+        max-width: 835px;
+        height: 412px;
+        @include flex-style(center, center);
+        .world_map {
+          width: 835px;
+          height: auto;
+        }
+        .location_container {
+          position: absolute;
+          top:0;
+          left: 0;
+          width: 100%;
+          max-width: 835px;
+          height: 412px;
+          .tooltip-korea {
+            top: 125px;
+            right: 115px;
+            margin: 0 auto;
+          }
+          .tooltip-canada {
+            top: 105px;
+            left: 100px;
+            margin: 0 auto;
+          }
+          .tooltip-singapore {
+            top: 230px;
+            right: 170px;
+            margin: 0 auto;
+          }
+        }
+      }
+      .timezone_container {
+        margin-top: 90px;
+        height: 260px;
+        width: 100%;
+        background-color: #f6f6f6;
+        @include flex-style(center, center);
+        .timezone_inner_container {
+          width: 100%;
+          max-width: 770px;
+          flex-direction: row;
+          @include flex-style(space-around, center);
+        }
+      }
+    }
+    .last_section_nav {
+      width: 100%;
+      height: 386px;
+      @include flex-style(center, center);
+    }
+  }
+}
+
+
+
+@include media("<=tablet") {
+  .contact_container {
+    .dim_layer {
+      height: 780px;
+    }
+    .masthead {      
+      height: 780px;
+      .masthead--title {
+        max-width: 600px;
+        @include notoSans-style(40px, bold, 68px, #fff);
+      }
+      .masthead--subtitle {
+        margin-top: 127px;
+        @include notoSans-style(14px, bold, 19px, #ff8300);
+      }
+      .masthead--arrow {
+        z-index: 2;
+        margin-top: 109px;
+      }
+    }
+    .contact_contents {
+      .email_wrapper {
+        flex-direction: column;
+      }
+      .vertigo_contact_container {
+        margin-top: 179px;
+        .vertigo_map_container {
+          @include flex-style(center, flex-start);
+          .world_map {
+            width: 597.49px;
+            height: auto;
+          }
+          .location_container {
+            .tooltip-korea {
+              top: 71px;
+              right: 158px;
+            }
+            .tooltip-canada {
+              top: 66px;
+              left: 140px;
+              margin: 0 auto;
+            }
+            .tooltip-singapore {
+              top: 149px;
+              right: 197px;
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+    }
+  } 
+}
+
+@include media("<=phone") {
+  .contact_container {
+    .dim_layer {
+      height: 350px;
+    }
+    .masthead {      
+      height: 350px;
+      .masthead--title {
+        margin-top: 77px;
+        max-width: 280px;
+        @include notoSans-style(25px, bold, 34px, #fff);
+      }
+      .masthead--subtitle {
+        margin-top: 37px;
+        @include notoSans-style(8px, bold, 11px, #ff8300);
+      }
+      .masthead--arrow {
+        display: none;
+      }
+    }
+    .contact_contents {
+      .contact_title {
+        max-width: 258px;
+        text-align: center;
+      }
+      .contact_us_container {
+        text-align: center;
+        //padding: 29px 31px 29px 31px;
+      }
+      .email_wrapper {
+        margin-top: 54px;
+      }
+      .vertigo_contact_container {
+        margin-top: 112px;
+        .map_title {
+          max-width: 258px;
+          text-align: center;
+        }
+        .map_desc {
+          margin-top: 24px;
+          width: 258px;
+          text-align: center;
+        }
+        .vertigo_map_container {
+          display: none;
+        }
+        .timezone_container {
+          margin-top: 52px;
+          width: 100%;
+          height: 286px;
+          max-width: 267px;
+          background-color: #fff;
+          .timezone_row_wrapper {
+            flex-wrap: wrap;
+            @include flex-style(center, center);
+            .timezone_col {
+              height: 94px;
+              border-top: 1px solid #f0f0f0;
+              border-bottom: 1px solid #f0f0f0;
+              @include flex-style(center, center);
+            }
+            .location_col {
+              height: 94px;
+              border-top: 1px solid #f0f0f0;
+              border-bottom: 1px solid #f0f0f0;
+              @include flex-style(center, center);
+            }
+          }
+        }
+      }
+    }
+  }
+}

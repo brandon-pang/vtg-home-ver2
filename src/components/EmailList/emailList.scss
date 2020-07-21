@@ -1,0 +1,41 @@
+@import "utils";
+
+.email_container {
+  width: 100%;
+  max-width: 290px;
+  flex-direction: column;
+  @include flex-style(center, center);
+  .email_title {
+    margin-bottom: 20px;
+    @include notoSans-kr-style(22px, 300, 33px, #1c1c1c);
+  }
+  .email_address_btn {
+    position: relative;
+    height: 44px;
+    width: 290px;
+    border: 1px solid #1c1c1c;
+    border-radius: 5px;
+    @include flex-style(center, center);
+    .email_address {
+      @include notoSans-style(16px, bold, 33px, #1c1c1c);
+    }
+    .email_arrow {
+      position: absolute;
+      right: 15px;
+      width: 7px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@include media ("<=tablet") {
+  .email_container {
+    margin-bottom: 77px;
+  }
+}
+
+@include media ("<=phone") {
+  .email_container {
+    margin-bottom: 28px;
+  }
+}

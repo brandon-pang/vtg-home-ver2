@@ -1,0 +1,121 @@
+@import 'utils';
+
+.city_clock_wrapper {
+  width: 150px;
+  flex-direction: column;
+  @include flex-style(center, center);
+}
+.analog_clock_wrapper {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border: 3px solid #F0F0F0;
+  
+  .clock_content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .indicator {
+      
+      transform-origin: bottom;
+      outline: 1px solid transparent; // Firefox fix on rotation
+      position: absolute;
+      bottom: 50%;
+      &.hours-indicator {
+        height: 40px;
+        width: 3px;
+        border-radius: 2.5px;
+        background-color: #1C1C1C;
+        box-shadow: 1px 2px 4px 0 rgba(0,0,0,0.3);
+      }
+      &.minutes-indicator {
+        height: 50px;
+        width: 2px;
+        border-radius: 2.5px;
+        background-color: #54565A;
+        box-shadow: 1px 2px 4px 0 rgba(0,0,0,0.3);
+      }
+      &.seconds-indicator {
+        height: 50px;
+        width: 0.5px;
+        border-radius: 2.5px;
+        background-color: #858585;
+      }
+    }
+    
+    .clock_indicator {
+      height: 8px;
+      width: 8px;
+      background-color: #1C1C1C;
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+}
+
+.city_name_wrapper {
+  margin-top: 11px; 
+  @include notoSans-style(14px, 500, 19px, #54565a);
+}
+
+@include media ("<=phone") {
+  .city_clock_wrapper {
+    width: 200px;
+    @include flex-style(flex-start, center);
+    flex-direction: row;
+    .analog_clock_wrapper {
+      height: 80px;
+      width: 80px;
+      .clock_content {
+        .indicator {
+          transform-origin: bottom;
+          outline: 1px solid transparent; // Firefox fix on rotation
+          position: absolute;
+          bottom: 50%;
+          &.hours-indicator {
+            height: 20px;
+          }
+          &.minutes-indicator {
+            height: 30px;
+          }
+          &.seconds-indicator {
+            height: 30px;
+          }
+        }
+        .clock_indicator {
+          height: 8px;
+          width: 8px;
+          background-color: #1C1C1C;
+          border-radius: 50%;
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+        }
+      }
+    }
+    .city_name_wrapper {
+      width: 100%;
+      max-width: 90px;
+      margin-left: 15px;
+      margin-top: 0;
+      @include notoSans-style(15px, 500, 20px, #54565a);
+    }
+  }
+}

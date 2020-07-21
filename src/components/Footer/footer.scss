@@ -1,0 +1,210 @@
+@import "utils";
+
+.footer_container {
+  height: 100%;
+  min-height: 250px;
+  padding-left: 8.27%;
+  padding-right: 8.27%;
+  background-color: #f0f0f0;
+  flex-direction: column;
+  @include flex-style(flex-start, center);
+  .footer_first_row {
+    margin-top: 49px;
+    height: 31px;
+    flex-wrap: wrap;
+    width: 100%;
+    @include flex-style(space-between, center);
+    .vertigo_footer_first_row_container {
+      width: 82%;
+      @include flex-style(flex-end, center);
+      .vertigo_footer_menu {
+        flex-wrap: wrap;
+        @include flex-style(flex-end, center);
+        .footer_element {
+          margin-right: 43px;
+          @include notoSans-style(17px, 300, 23px, #858585);
+          > a {
+            color: #858585;
+          }
+        }
+      }
+      .current_lang_container {
+        cursor: pointer;
+        //width: 100%;
+        @include flex-style(center, center);
+        .current_lang {
+          margin-left: 8.5px;
+          @include notoSans-style(17px, 300, 23px, #858585);
+        }
+        .lang_up {
+          margin-left: 6.5px;
+        }
+        .lang_down {
+          margin-left: 6.5px;
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+  .footer_second_row {
+    margin-top: 55px;
+    width: 100%;
+    @include flex-style(space-between, center);
+    .trade_right_wrapper {
+      width: 50%;
+      flex-direction: column;
+      @include flex-style(flex-start, center);
+      .footer_trade_marks {
+        width: 100%;
+        @include notoSans-style(12px, 300, 17px, #858585);
+        @include flex-style(flex-start, center);
+      }
+      .footer_right {
+        margin-top: 10px;
+        width: 100%;
+        @include notoSans-style(12px, 300, 17px, #858585);
+        @include flex-style(flex-start, center);
+      }
+    }
+    .sns_wrapper {
+      @include flex-style(flex-end, center);
+      .sns_facebook {
+        //margin-right: 25px;
+      }
+    }
+  }
+}
+
+@include media("<=tablet") {
+  .footer_container {
+    padding-left: 7.16%;
+    padding-right: 8.27%;
+    flex-direction: column;
+    @include flex-style(flex-start, center);
+    .footer_first_row {
+      margin-top: 49px;
+      flex-wrap: wrap;
+      height: auto;
+      width: 100%;
+      @include flex-style(flex-start, center);
+      .vertigo_footer_first_row_container {
+        position: relative;
+        width: 100%;
+        @include flex-style(flex-end, center);
+        .vertigo_logo {
+          width: 30%;
+          @include flex-style(flex-start, center);
+        }
+        .vertigo_footer_menu {
+          margin-top: 28px;
+          width: 100%;
+          padding-right: 0;
+          @include flex-style(flex-start, center);
+          .footer_element {
+            margin-right: 43px;
+            @include notoSans-style(14px, 300, 19px, #858585);
+          }
+        }
+        .current_lang_container {
+          position: absolute;
+          bottom: 35px;
+          margin: 0 auto;
+          width: 15%;
+          @include flex-style(center, center);
+          .current_lang {
+            margin-left: 8.5px;
+            @include notoSans-style(17px, 300, 23px, #858585);
+          }
+        }
+      }
+    }
+    .footer_second_row {
+      margin-bottom: 40px;
+      margin-top: 64px;
+      width: 100%;
+      height: auto;
+      flex-direction: column-reverse;
+      @include flex-style(center, flex-start);
+      .trade_right_wrapper {
+        margin-top: 35px;
+        width: 100%;
+        .footer_right {
+          margin-top: 22px;
+        }
+      }
+      
+    }
+  }
+}
+
+@include media("<=phone") {
+  .footer_container {
+    height: auto !important;
+    max-height: none;
+    .footer_first_row {
+      margin-top: 30px;
+      flex-wrap: wrap;
+      width: 97%;
+      @include flex-style(flex-start, center);
+      .vertigo_logo {
+        padding-left: 0;
+        width: 30%;
+        @include flex-style(flex-start, center);
+      }
+      .vertigo_footer_first_row_container {
+        .vertigo_footer_menu {
+          padding-left: 0;
+          margin-top: 14px;
+          padding-right: 0;
+          flex-direction: column;
+          @include flex-style(flex-start, center);
+          .footer_element {
+            text-align: left;
+            margin-bottom: 11px;
+            width: 100%;
+            margin-right: 0;
+            @include notoSans-style(14px, 300, 19px, #858585);
+          }
+        }
+        .current_lang_container {
+          display: none;
+        }
+      }      
+    }
+    .footer_second_row {
+
+      padding-left: 0;
+      margin-top: 36px;
+      margin-bottom: 62px;
+      width: 96%;
+      flex-wrap: wrap-reverse;
+      //flex-direction: column;
+      @include flex-style(flex-end, flex-end);
+      .trade_right_wrapper {
+        margin-top: 37px;
+        padding-left: 0;
+        width: 100%;
+        flex-direction: column;
+        @include flex-style(flex-start, center);
+        .footer_trade_marks {
+          @include notoSans-style(12px, 300, 23px, #858585);
+          @include flex-style(flex-start, center);
+        }
+        .footer_right {
+          width: 100%;
+          @include notoSans-style(12px, 300, 23px, #858585);
+          @include flex-style(flex-start, center);
+        }
+      }
+      .sns_wrapper {
+        margin-bottom: 5px;
+        padding-right: 30px;
+        width: 50%;
+        @include flex-style(flex-start, center);
+        .sns_facebook {
+          margin-right: 25px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,576 @@
+{
+    "about_section_top_title": "BRINGING THE PLEASANT SENSATION OF VERTIGO TO GAMING",
+    "about_section_tpp_subtitle": "VERTIGO GAMES",
+    "about_section_top_desc": "버티고우 게임즈가 궁금하신가요?",
+    "about_section_1_title": "버티고우 게임즈는 게임개발사 입니다.",
+    "about_section_1_desc": "<b>버티고우 게임즈<\/b>는 실시간 PvP 게임을 개발하는데 중점을 두고 있습니다. <br \/><br \/>2006년 창업 이후 권호, 블랙샷, 워오브좀비를 개발하였으며, 인하우스 스튜디오에서는 전세계 유저가 지속적으로  즐길 수 있는 게임을 개발 및 연구하고 있습니다. 회사의 대표 게임 <b>Blackshot<\/b>은 2007년 출시 이후부터 지금까지 글로벌 시장에서 서비스를 운영중에 있습니다. <br \/> <br \/>버티고우 게임즈는 2015년부터 인하우스 게임 외 다양한 온라인 게임(데카론,워록, 라테일, 대항해시대 온라인)을 <b> Papaya Play <\/b>를 통해 서비스하기 시작하면서 퍼블리싱 사업 역량을 강화하고 있습니다. 앞으로도 <b>Papaya Play<\/b> 플랫폼을 통해 전세계 유저들이 즐겨할 수 있는 다양한 온라인 및 모바일 게임들을 선보이며 서비스를 확장해나갈 계획입니다.",
+    "about_section_2_title": "버티고우 게임즈는 <b>글로벌 서비스 플랫폼<\/b><span>Papaya play<\/span>를 운영합니다.",
+    "about_section_2_desc": "버티고우 게임즈는 2016년부터 <b>Papaya Play<\/b> 글로벌 서비스 플랫폼 운영을 시작하여 이를 통해 현재 6개의 게임을 글로벌 서비스 중에 있습니다.",
+    "six_reason_data": [
+        {
+            "title": "<b>글로벌화<\/b> 전략"
+        },
+        {
+            "title": "<b>숙련된<\/b> 팀"
+        },
+        {
+            "title": "다양한 <b>결제수단<\/b>"
+        },
+        {
+            "title": "<b>현지화<\/b> 서비스"
+        },
+        {
+            "title": "강력한 <b>커뮤니티<\/b>"
+        },
+        {
+            "title": "확실한 <b>솔루션<\/b>"
+        }
+    ],
+    "about_section_3_title": "버티고우 게임즈 연대기",
+    "history_data": [
+        {
+            "year": "2018",
+            "contents": [
+                {
+                    "month": "1월",
+                    "topic": "<b>싱가포르<\/b> 지사 설립"
+                }
+            ]
+        },
+        {
+            "year": "2017",
+            "contents": [
+                {
+                    "month": "12월.",
+                    "topic": "<b>Blackshot SEA<\/b> 자체 퍼블리싱 시작"
+                },
+                {
+                    "month": "10월.",
+                    "topic": "WarRock(워록), La Tale(라테일), Uncharted Water Online(대항해 시대 온라인) 퍼블리싱"
+                }
+            ]
+        },
+        {
+            "year": "2016",
+            "contents": [
+                {
+                    "month": "5월.",
+                    "topic": "Dekaron(데카론) 서비스 시작"
+                },
+                {
+                    "month": "",
+                    "topic": "글로벌 게임 플랫폼 <b>Papaya Play<\/b> 출시"
+                }
+            ]
+        },
+        {
+            "year": "2015",
+            "contents": [
+                {
+                    "month": "7월.",
+                    "topic": "<b>밴쿠버<\/b> 지사 설립"
+                }
+            ]
+        },
+        {
+            "year": "2014",
+            "contents": [
+                {
+                    "month": "3월",
+                    "topic": "<b>북미<\/b> 지사 설립"
+                }
+            ]
+        },
+        {
+            "year": "2013",
+            "contents": [
+                {
+                    "month": "7월.",
+                    "topic": "<b>Blackshot Global<\/b> 자체 퍼블리싱 시작"
+                }
+            ]
+        },
+        {
+            "year": "2010",
+            "contents": [
+                {
+                    "month": "7월.",
+                    "topic": "<b>Blackshot Global<\/b> 서비스 시작. 유럽시장 진출"
+                }
+            ]
+        },
+        {
+            "year": "2009",
+            "contents": [
+                {
+                    "month": "9월",
+                    "topic": "Tencent와 War Of Zombie(워오브좀비) 공동개발 계약체결"
+                },
+                {
+                    "month": "4월",
+                    "topic": "<b>Blackshot<\/b> 싱가포르, 말레이시아 진출"
+                }
+            ]
+        },
+        {
+            "year": "2008",
+            "contents": [
+                {
+                    "month": "9월.",
+                    "topic": "THQ와의 파트너쉽 체결,"
+                },
+                {
+                    "month": "",
+                    "topic": "Smackdown VS Raw Online 공동개발 계약체결"
+                }
+            ]
+        },
+        {
+            "year": "2007",
+            "contents": [
+                {
+                    "month": "11월.",
+                    "topic": "<b>Blackshot<\/b> 국내 서비스 시작"
+                }
+            ]
+        },
+        {
+            "year": "2006",
+            "contents": [
+                {
+                    "month": "2월",
+                    "topic": "<b>권호<\/b> 서비스 시작"
+                },
+                {
+                    "month": "1월",
+                    "topic": "<b>버티고우 게임즈<\/b> 설립"
+                }
+            ]
+        }
+    ],
+    "character_data": [
+        {
+            "dialogue": "버티고우 게임즈, 도전적이지만 매우 위대한 미래를 위해 도약!"
+        },
+        {
+            "dialogue": "Papaya Play에서 새로운 게임들과 만남!"
+        },
+        {
+            "dialogue": "글로벌을 무대를 향한 도약 준비 완료!"
+        },
+        {
+            "dialogue": "Blackshot! 싱가포르 말레이시아에서<br\/>FPS 1위 달성!"
+        },
+        {
+            "dialogue": "Blackshot 등장!"
+        }
+    ],
+    "careers_section_hire_button": "채용 포지션 바로보기",
+    "careers_section_top_title": "JOIN VERTIGO GAMES",
+    "careers_section_top_subtitle": "VERTIGO GAMES",
+    "careers_section_top_desc": "당신을 통해 세상은 진정한 VERTIGO를 경험합니다. ",
+    "careers_section_1_title": "버티고우 게임즈를 만드는 이들",
+    "careers_section_1_goal_desc": "재능과 창의력, 그리고 열정을 기반으로 한<br \/><b>21세기형 인재들의 집합소 : 버티고우 게임즈<\/b>는<br\/>정직, 소통, 그리고 공감을 지향합니다.",
+    "careers_number_box_title_1": "정직",
+    "careers_number_box_desc_1": "투명하고 솔직하며 양심적인 삶의 명분과 가치를 가진 사람",
+    "careers_number_box_title_2": "소통",
+    "careers_number_box_desc_2": "허물없는 소통을 통해 조직 내 다양한 창의력과 재능을 극대화하여 새로운 콘텐츠 개발에 대한 동기부여가 가능한 사람",
+    "careers_number_box_title_3": "공감",
+    "careers_number_box_desc_3": "공감대를 형성하고 넘치는 인간미와 유연함으로 조직의 인화를 이끌어 낼 수 있는 사람",
+    "careers_section_2_title": "버티고우 게임즈 라이프",
+    "careers_vglife_title_1": "보상체계",
+    "careers_vglife_desc_1": "버티고우 게임즈는 연봉에 따른 기본급과 성과에 따른 조직 성과급 제도를 운영하고 있습니다.",
+    "careers_vglife_title_2": "육성체계",
+    "careers_vglife_desc_2": "버티고우 게임즈는 직원의 역량 및 자기계발을 위해 다양한 육성프로그램을 제공하기 위해 항상 고민하고 있습니다.",
+    "lifebox_data_top": [
+        {
+            "title": "직무교육",
+            "list": [
+                "전산시스템 교육",
+                "오피스프로그램 교육"
+            ]
+        },
+        {
+            "title": "리더십 교육",
+            "list": [
+                "신입사원 교육",
+                "팀장교육",
+                "임원교육"
+            ]
+        },
+        {
+            "title": "윤리교육",
+            "list": [
+                "버티고우게임즈 윤리강령교육",
+                "성희롱예방교육",
+                "안전\/보건교육"
+            ]
+        }
+    ],
+    "careers_vglife_title3": "복리후생",
+    "lifebox_data_bottom": [
+        {
+            "title": "직원들의 건강",
+            "list": [
+                "건강검진 \/ 상해보험",
+                "휴양시설 & 선택적 복리후생"
+            ]
+        },
+        {
+            "title": "Work and Life Balance",
+            "list": [
+                "경조사 지원&휴가",
+                "시차출퇴근제 운영",
+                "금요일 조기퇴근",
+                "생일\/기념일 반차 제공 예정"
+            ]
+        },
+        {
+            "title": "신뢰할 수 있는 기업 문화 ",
+            "list": [
+                "팀 운영비 \/ 워크샵",
+                "장기 근속 프로그램 및 연차에",
+                "따른 휴가 지원금 및 휴가 지원",
+                "복지카드 제공",
+                "도서실 및 사내카페 운영 예정"
+            ]
+        }
+    ],
+    "careers_section_3_title": "채용 프로세스",
+    "hire_process_list_title_1": "서류심사",
+    "hire_process_list_title_2": "업무능력평가",
+    "hire_process_list_title_3": "경영진",
+    "hire_process_list_title_4": "최종합격",
+    "first_step_data": [
+        "이력서",
+        "자기소개서",
+        "경력기술서",
+        "포트폴리오",
+        "기반 평가"
+    ],
+    "second_step_data": [
+        "팀",
+        "직군 담당자 면접",
+        "실무능력",
+        "전문지식",
+        "업무 수행 능력 검토"
+    ],
+    "third_step_data": [
+        "업무 능력 및 문화 적합도",
+        "인성 등을 검증"
+    ],
+    "process_info": "[기타사항]<br \/>서류 심사에 통과한 분에 한해 개별적으로 결과를 알려 드립니다.<br \/>제출서류는 반환하지 않습니다.<br \/> 국가보훈대상자는 관련볍규에 의거, 우대합니다.",
+    "careers_section_4_title": "채용 포지션",
+    "careers_section_4_no_hire": "현재 고용중인 포지션이 없습니다.",
+    "contactspage_section_top_title": "CONTACT US",
+    "contactspage_section_top_subtitle": "VERTIGO GAMES",
+    "contactspage_section_top_desc": "우리와 연락하세요",
+    "contactspage_section_1_title": "버티고우 게임즈에 궁금한점이 있나요?",
+    "contactspage_contact_desc": "버티고우 게임즈와 프로젝트를 협업하거나 아이디어를 공유하고 싶습니까?<br \/> 혹은 다른 정보들을 안내받고 싶나요?<b>우리에게 연락하세요.<\/b>",
+    "email_list_data": [
+        {
+            "title": "비지니스 문의",
+            "address": "biz@vertigogames.com"
+        },
+        {
+            "title": "일반 문의",
+            "address": "contact@vertigogames.com"
+        },
+        {
+            "title": "채용 문의",
+            "address": "job@vertigogames.com"
+        }
+    ],
+    "contactpage_section_2_title": "버티고우 게임즈는 여기에 있습니다",
+    "contactpage_section_2_desc": "우리는 서울에 본사를 두고 벤쿠버, 싱가포르 지사를 갖고 서비스 하고 있습니다.",
+    "map_data": [
+        {
+            "name": "korea",
+            "location": "Seoul, Korean",
+            "address": "16F Dong Hoon Tower,<br\/>317, Teheran-ro, Gangnam-gu,<br\/>Seoul, Korea 06151",
+            "contact": "contact@vertigogames.com",
+            "phoneNumber": "TEL +82+2-2051-9599",
+            "viewMore": "View More"
+        },
+        {
+            "name": "canada",
+            "location": "Vancouver, Canada",
+            "address": "Burnaby, BC V5C CANADA",
+            "contact": "'https:\/\/www.papayaplay.com",
+            "phoneNumber": "",
+            "viewMore": "View More"
+        },
+        {
+            "name": "singapore",
+            "location": "Singapore, Singapore",
+            "address": "'Singapore 068808",
+            "contact": "https:\/\/www.papayaplay.com",
+            "phoneNumber": "",
+            "viewMore": "View More"
+        }
+    ],
+    "papaya_game_data": [
+        {
+            "title": "Blackshot M",
+            "subtitle": "모바일 FPS"
+        },
+        {
+            "title": "BlackShot",
+            "subtitle": "밀리터리 F2P MMOFPS"
+        },
+        {
+            "title": "데카론",
+            "subtitle": "판타지 액션 MMORPG"
+        },
+        {
+            "title": "워록",
+            "subtitle": "멀티플레이어 FPS"
+        },
+        {
+            "title": "라 테일",
+            "subtitle": "판타지 액션 MMORPG"
+        },
+        {
+            "title": "대항해 시대 온라인",
+            "subtitle": "바다위에서 펼쳐지는 MMORPG"
+        },
+        {
+            "title": "워 오브 좀비",
+            "subtitle": "밀리터리 F2P MMORPG"
+        },
+        {
+            "title": "권호",
+            "subtitle": "온라인 결투 액션게임"
+        }
+    ],
+    "game_content_data": [
+        {
+            "title": "Blackshot M[블랙샷 모바일]",
+            "genre": "Mobile FPS",
+            "features": "Physics Engine , Optimized for fast-paced battles on mobile device with clean and easy UI , 4v4 Real-Time PvP Game",
+            "developer": "버티고우 게임즈",
+            "publisher": "파파야 플레이",
+            "releaseDate": "April 2019",
+            "desc": "4:4를 기반으로 한 실시간 PVP게임! 쉽고, 빠르고, 캐주얼한 모바일의 재미와 원작 FPS재미를 섞은 새로운 모바일 FPS 게임!"
+        },
+        {
+            "title": "Blackshot[블랙샷]",
+            "genre": "Military F2P MMOFPS",
+            "features": "Quick and aggressive game play, tactical skill upgrade system, numerous game modes, character customization",
+            "developer": "버티고우 게임즈",
+            "publisher": "파파야 플레이",
+            "releaseDate": "November 2007",
+            "desc": "버티고우 게임즈의 가장 성공한 FPS 게임인 Blackshot은 자체적으로 개발되었습니다. 빠른 속도감과 전략적인 게임 플레이를 게임을 통해 즐길 수 있습니다. Blackshot은 PapayaPlay를 통해 동남아와  글로벌 서비스로 운영되고 있습니다.",
+            "gameBtn": [
+                {
+                    "title": "Blackshot SEA Website",
+                    "url": "https:\/\/blackshot.papayaplay.com\/bssea.do"
+                },
+                {
+                    "title": "Blackshot GLobal Website",
+                    "url": "https:\/\/blackshot.papayaplay.com\/bsglb.do"
+                }
+            ]
+        },
+        {
+            "title": "DEKARON [데카론]",
+            "genre": "Fantasy Action MMORPG ",
+            "features": "Various character classes, upgrades, massive PvP battles, instanced dungeons, abundance of in-game customization contents",
+            "developer": "UbiFUN",
+            "publisher": "파파야 플레이",
+            "releaseDate": "",
+            "desc": "데카론은 2개의 달이 비추는 대륙, 트리에스테에서 어둠(카론)과 대립하는 세계관을 가진 MMORPG 게임으로서 12개의 클래스를 선택해 캐릭터를 생성 할 수 있습니다. 캐릭터 육성을 통해 일정 레벨에 도달한 플레이어들은 ‘DK스퀘어’ 안에서 모든 유저들과  PVP 전투를 경험할 수 있습니다. 펫의 육성, 장비의 강화 등 MMORPG 에서 가능한 모든 것들을 개성있는 캐릭터를 이용하여 경험해보세요. 현재 데카론은  PapayaPlay를 통해서 플레이 가능합니다.",
+            "gameBtn": [
+                {
+                    "title": "Dekaron Website",
+                    "url": "https:\/\/dekaron.papayaplay.com\/dekaron.do"
+                }
+            ]
+        },
+        {
+            "title": "WarRock [워록]",
+            "genre": "Multiplayer FPS",
+            "features": "17 game modes spanning over 90 distinct maps, customizable characters\/loadouts, a hardcore Clan League and more",
+            "developer": "Dream Execution",
+            "publisher": "파파야 플레이",
+            "releaseDate": "",
+            "desc": "워록은 군용차량을 이용한 대규모 전투가 가능한 기존 FPS 게임과는 차별성이 있는 게임 입니다. 당시 국내에서 보기 힘든 탄도학을 적용하는 등 게임 내 리얼리티를 위한  새로운 시도를 하였습니다.  중동을 배경으로한 방대한 맵에서는 탱크, 전투헬기, 제트기가 등장하여 전쟁다운 전쟁을 플레이 할 수 있고,  몰입도 높은 타격감을 선사합니다. 현재 워록는 PapayaPlay를 통해서 플레이 가능합니다.",
+            "gameBtn": [
+                {
+                    "title": "War Rock Website",
+                    "url": "https:\/\/warrock.papayaplay.com\/warrock.do"
+                }
+            ]
+        },
+        {
+            "title": "La Tale [라 테일]",
+            "genre": "Fantasy MMORPG",
+            "features": "9 distinct base character classes each with an extensive tree of skills and subclass specialities ",
+            "developer": "Actoz Soft",
+            "publisher": "파파야 플레이",
+            "releaseDate": "",
+            "desc": "라테일은 횡스크롤 방식으로 이루어진 캐주얼 액션 MMORPG로,  간단한 조작으로 다양한 액션을 즐길 수 있는 게임 입니다. 50개 이상의 직업과 클래스를 선택하여 자신만의 캐릭터를 만들고, 전 세계의 영웅들과 함께하며, 마법대륙으로 모험을 떠나보세요. 라테일은 PapayaPlay를 통해서 플레이 가능합니다.  ",
+            "gameBtn": [
+                {
+                    "title": "La Tale Website",
+                    "url": "https:\/\/latale.papayaplay.com\/latale.do"
+                }
+            ]
+        },
+        {
+            "title": "Uncharted Waters Online [대항해 시대 온라인]",
+            "genre": "MMORPG",
+            "features": "Hundreds of game objectives(more than 80 professions and more than 100 skills) to master, buy\/build\/customize ships from across the ages, participate in massive PvPsea fights with hundreds of other ships",
+            "developer": "Koei Tecmo",
+            "publisher": "파파야 플레이",
+            "releaseDate": "",
+            "desc": "대항해시대 온라인은  16세기 ~ 19세기 배경의 MMORPG 게임으로 플레이어들은 대의 불가사의 탐험, 유럽과 동아시아로의 무역, 바다위에서의 해전을 경험할 수 있습니다. 50종 이상의 직업, 100종 이상의 스킬로 자신만의 캐릭터를 육성할 수 있고, 다른 플레이어들과 함대를 구성하여 다양한 모험을 즐 길 수 있습니다. 지역과 시간에 따라 변화하는 바다를 실감나게 표현하여 해수의 변화, 바람의 변화 등을 실제로 느낄 수 있으며 내륙으로는 나일강, 피라미드 등을 직접 마주 할 수 있습니다. 현재 대항해시대 온라인은  PapayaPlay를 통해서 플레이 가능합니다.",
+            "gameBtn": [
+                {
+                    "title": "Uncharted Waters Online Website",
+                    "url": "https:\/\/uwo.papayaplay.com\/uwo.do"
+                }
+            ]
+        },
+        {
+            "title": "War Of Zombie [워 오브 좀비]",
+            "genre": "Military F2P MMOFPS",
+            "features": "Intelligent AI, PVP\/PVZ\/PVE game modes",
+            "developer": "",
+            "publisher": "",
+            "releaseDate": "May 2013",
+            "desc": "War Of Zombie는 버티고우 게임즈와 Tencent와 파트너쉽을 맺고 개발한 게임으로 기존의 좀비게임과 차별화 됩니다. Intelligent AI를 적용한 다양한 PvE모드와 블랙샷의 타격감을 계승한 게임입니다."
+        },
+        {
+            "title": "Kwonho [권호]",
+            "genre": "Online Fighting",
+            "features": "Customizable characters",
+            "developer": "버티고우 게임즈",
+            "publisher": "버티고우 게임즈",
+            "releaseDate": "Mid-2006",
+            "desc": "권호는 버티고우 게임즈에서 자체적으로 개발한 실시간 온라인 3D 격투 게임입니다. 2006년 당시 기존의 온라인 대전격투 게임 장르에서 가질 수 없었던 캐릭터 성장 시스템, 성장의 다양성, 특유의 게임요소들을 결합하여 차별화된 온라인 아케이드 격투게임으로 개발 되었습니다. 게임 내에서는 팔극권, 태극권, 태권도, 유도 등의 고전 무술 동작을 사용한 전투를 맛볼 수 있으며 무에타이, 이종 격투기의 현대 격투스킬을 경험할 수 있습니다."
+        }
+    ],
+    "games_section_top_title": "STAYING TRUE TO OUR PASSION WE LOVE MAKING GAMES",
+    "games_section_top_subtitle": "VERTIGO GAMES",
+    "games_section_top_desc": "우리의 콘텐츠를 볼래?",
+    "khw_worldview": "권호 세계관",
+    "khw_martial_style": "격투 스타일",
+    "khw_game_screenshot": "게임 스크린샷",
+    "khw_keyword_data": [
+        {
+            "title": "#리얼리티 3D 대전 액션",
+            "desc": "당시 PC 게임에서 한번도 시도되지<br\/> 않았던 최초의 온라인 3D 격투게임"
+        },
+        {
+            "title": "#캐릭터의 성장",
+            "desc": "캐릭터 성장에 따라 습득이 가능한<br\/>다양한 스킬 시스템 제공"
+        },
+        {
+            "title": "#도장 커뮤니티",
+            "desc": "당시 PC 게임에서 한번도 시도되지<br\/> 않았던 최초의 온라인 3D 격투게임"
+        }
+    ],
+    "khw_martial_data": [
+        {
+            "title": "태권도",
+            "desc": "빠른 속도의 발차기가 특징<br\/>스킬 사용이 간단하고 빠르며 초보자가 사용하기 용이<br\/>평균 데미지가 높으며, 스킬 향상 이후 금강서기로의 전환이 가능하며 심화된 공격 가능"
+        },
+        {
+            "title": "무에타이",
+            "desc": "강력한 펀치 콤비네이션과 무릎차기가 특정<br\/>강력한 펀치, 엘보, 니킥 콤비네이션을 보유하고 있으며, 스킬 사용 난이도가 쉬움<br\/>중, 근접격투에 유리한 격투로 공격거리가 짧아 대상과의 거리 염두 필요"
+        },
+        {
+            "title": "태극권",
+            "desc": "빠른 손놀림 보다는 심리전을 원하는 플레이어게 적합한 캐릭터<br\/>반격기 위주의 격투를 벌이며, 연속 스킬과 단타계열이 적절히 배합되어 있으나 공격력이 낮음<br\/>상대의 타이밍을 이용해 효과적인 반격기 사용"
+        },
+        {
+            "title": "팔극권",
+            "desc": "접근전에 강한 캐릭터로 정확한 타이밍과 스킬입력이 필요<br\/>단타계열의 스킬을 사용하며 발동후 빈틈으로 플레이 난이도가 있음<br\/>정타 시킬 경우 막강한 데미지를 뽑아내어 최고의 타격감을 발휘"
+        },
+        {
+            "title": "유도",
+            "desc": "정확한 타이밍과 상대의 심리를 꿰뚫어야 능숙하게 사용 가능<br\/>그래플링(잡기) 스타일에 특화되어 있으며, 치명타 공격은 없지만 허점 공략을 통해 강력하고 연속적인 공격 가능<br\/>타격기가 낮고 공격거리가 짧아 대상의 심리를 잘 파악하여 빈틈을 공략해야 하는 상급기술 캐릭터"
+        }
+    ],
+    "main_section_1_title": "DELIVERING THE ULTIMATE GAME EXPERIENCE",
+    "main_section_1_subtitle": "VERTIGO GAMES",
+    "main_section_1_desc": "진짜 재밋는 경험 해볼 준비됐어?",
+    "main_section_2_title_mobile": "롤러코스터를 탈 때 기분이 아찔해지는 경험을 한 적이 있나요?",
+    "main_section_2_title": "롤러코스터를 탈 때<br \/> 기분이 아찔해지는<br \/> 경험을 한 적이 있나요?",
+    "main_section_2_desc_mobile": "그때 느낀 경험이 바로 VERTIGO 입니다<br \/> 우리는 그 경험을 게임에 가져오는 것을 목표로 합니다",
+    "main_section_2_desc": "그때 느낀 경험이 바로 VERTIGO 입니다<br \/> 우리는 그 경험을 게임에 가져오는 것을 목표로 합니다<br \/> 버티고우 게임즈는 한국에 본사를 둔 게임회사로<br \/> 캐나다, 싱가포르 지사와 함께 글로벌 시장을 타겟하는 게임을 개발하며 서비스하는<br \/> 회사입니다.",
+    "main_section_2_country_title": "42+",
+    "main_section_2_country_desc": "countries",
+    "main_section_2_player_title": "13,000,000+",
+    "main_section_2_player_desc": "players",
+    "main_section_2_office_title": "3",
+    "main_section_2_office_desc": "offices",
+    "main_section_games_title": "우리는 <b>게임 개발사<\/b> 입니다",
+    "main_section_games_main_title": "games",
+    "main_section_games_main_desc": "전세계 유저들이 다양하게 즐길 수 있는 우수한 게임을 제공 합니다",
+    "main_section_develop_games": [
+        {
+            "notice": "",
+            "title": "Blackshot M",
+            "subtitle": "모바일 FPS",
+            "btn": "view more"
+        },
+        {
+            "notice": "",
+            "title": "블랙샷",
+            "subtitle": "밀리터리 F2P MMORPG",
+            "btn": "view more"
+        },
+        {
+            "notice": "서비스 종료",
+            "title": "War Of Zombie",
+            "subtitle": "밀리터리 F2P MMORPG",
+            "btn": "view more"
+        },
+        {
+            "notice": "서비스 종료",
+            "title": "권호",
+            "subtitle": "온라인 결투 액션게임",
+            "btn": "view more"
+        }
+    ],
+    "main_section_publish_title": "우리는 <span class=\"green_font\">PapayaPlay<\/span>를 통해 게임을 서비스 합니다",
+    "main_section_publish_main_title": "publishing",
+    "main_section_publish_main_desc": "플레이어의 만족도를 높이기 위해<br \/>게임 퍼블리싱 플랫폼인 <span>Papaya Play<\/span> 를 운영합니다",
+    "main_section_publish_games": [
+        {
+            "title": "블랙샷",
+            "subtitle": "밀리터리 F2P MMORPG",
+            "btn": "view more"
+        },
+        {
+            "title": "대항해 시대 온라인",
+            "subtitle": "바다위에서 펼쳐지는 MMORPG",
+            "btn": "view more"
+        },
+        {
+            "title": "데카론",
+            "subtitle": "판타지 액션 MMORPG",
+            "btn": "view more"
+        },
+        {
+            "title": "라테일",
+            "subtitle": "판타지 액션 MMORPG",
+            "btn": "view more"
+        },
+        {
+            "title": "워록",
+            "subtitle": "멀티플레이어 FPS",
+            "btn": "view more"
+        }
+    ],
+    "main_section_news_title": "우리의 새로운 소식",
+    "main_section_news_main_title": "news",
+    "main_section_news_main_desc": "버티고우 게임즈는 글로벌 기업으로 성장해 나가고<br\/> 있습니다",
+    "newspage_top_seciton_title": "VERTIGO GAMES IN THE PRESS",
+    "newspage_top_seciton_subtitle": "VERTIGO GAMES",
+    "newspage_top_seciton_desc": "우리의 핫한 소식",
+    "khw_pyramid_desc": "플레이어가 자체적으로 도장을 만들 수 있으며, 도장의 명성도에 영향을 미칠 수 있습니다.<br\/>플레이어들은 다른 경쟁자들과 전투 경쟁을 통해 모든 지역을 제패한 최고의 문파가 될 수 있습니다.",
+    "papaya_play_button": "웹사이트 바로가기"
+}

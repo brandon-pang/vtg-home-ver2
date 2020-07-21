@@ -1,0 +1,17 @@
+@import 'utils';
+
+.toTop_container {
+  width: 100%;
+  @include flex-style(center, center);
+  .toTopBtn {
+    width: 100%;
+    max-width: 31px;
+    flex-direction: column;
+    @include flex-style(center, center);
+    .top {
+      margin-top: 6px;
+      @include notoSans-style(16px, normal, 22px, #1c1c1c);
+    }
+  }
+
+}

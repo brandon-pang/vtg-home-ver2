@@ -1,0 +1,219 @@
+@import "utils";
+
+.modal_container {
+  padding-top: 40px;
+  padding-left: 83px;
+  padding-right: 83px;
+  width: 100vw; 
+  max-width: 1000px;
+  background-color: #fff;
+  flex-direction: column;
+  @include flex-style(flex-start, center);
+    .modal_header_wrapper {
+      width: 100%;
+      margin-bottom: 40px;
+      @include flex-style(space-between, center);
+    }
+    .modal_header_img_wrapper {
+      width: 100%;
+      max-width: 1000px;
+      .game_header--img {
+        width: 100%;
+      }
+    }
+    .modal_game_title_wrapper {
+      width: 100%;
+      //max-width: 1000px;
+      margin-top: 31px;
+      @include flex-style(center, flex-start);
+      .title_container {
+        .title {
+          @include notoSans-style(34px, 500, 46px, #1c1c1c);
+        }
+      }
+    }
+    .modal_game_contents_wrapper {
+      width: 100%;
+      max-width: 920px;
+      margin-top: 35px;
+      flex-direction: column;
+      @include flex-style(center, flex-start);
+      .game_genre {
+        width: 100%;
+        text-align: left;
+        @include flex-style(flex-start, center);
+        .genre--title {
+          @include notoSans-style(16px, bold, 22px, #1c1c1c);
+        }
+        .genre--desc {
+          margin-left: 5px;
+          @include notoSans-style(16px, normal, 22px, #1c1c1c);
+        }
+      }
+      .game_features {
+        margin-top: 10px;
+        width: 100%;
+        text-align: left;
+        @include flex-style(flex-start, flex-start);
+        .features--title {
+          @include notoSans-style(16px, bold, 22px, #1c1c1c);
+        }
+        .features--desc {
+          margin-left: 5px;
+          @include notoSans-style(16px, normal, 22px, #1c1c1c);
+        }
+      }
+      .game_release_date {
+        margin-top: 10px;
+        width: 100%;
+        text-align: left;
+        @include flex-style(flex-start, center);
+        .release_date--title {
+          @include notoSans-style(16px, bold, 22px, #1c1c1c);
+        }
+        .release_date--desc {
+          margin-left: 5px;
+          @include notoSans-style(16px, normal, 22px, #1c1c1c);
+        }
+      }
+
+      .game_developer {
+        margin-top: 10px;
+        width: 100%;
+        text-align: left; 
+        @include flex-style(flex-start, center);
+        .developer--title {
+          @include notoSans-style(16px, bold, 22px, #1c1c1c);
+        }
+        .developer--desc {
+          margin-left: 5px;
+          @include notoSans-style(16px, normal, 22px, #1c1c1c);
+        }
+      }
+      .game_publisher {
+        margin-top: 10px;
+        width: 100%;
+        text-align: left;
+        @include flex-style(flex-start, center);
+        .publisher--title {
+          @include notoSans-style(16px, bold, 22px, #1c1c1c);
+        }
+        .publisher--desc {
+          margin-left: 5px;
+          @include notoSans-style(16px, normal, 22px, #1c1c1c);
+        }
+      }
+    }
+    .modal_div_line {
+      margin-top: 30px;
+      width: 100%;
+      max-width: 920px;
+      border: 1px solid #dddddd;
+    }
+    .modal_game--desc {
+      margin-top: 30px;
+      width: 100%;
+      max-width: 920px;
+      @include notoSans-kr-style(16px, 300, 30px, #1c1c1c);
+    }
+    .store_wrapper {
+      flex-wrap: wrap;
+      margin-top: 60px;
+      width: 100%;
+      max-width: 540px;
+      @include flex-style(space-around, center);
+    }
+    .modal_game_btn_wrapper {
+      flex-wrap: wrap;
+      margin-top: 60px;
+      margin-bottom: 85px;
+      width: 100%;
+      max-width: 920px;
+      @include flex-style(space-around, center);
+      .modal_game_link--btn {
+        cursor: pointer;
+        position: relative;
+        width: 400px;
+        height: 44px;
+        border: 1px solid #1C1C1C;
+        border-radius: 5px;
+        @include flex-style(center, center);
+        .gameWeb--title {
+          width: 100%;
+          text-align: center;
+          @include notoSans-style(16px, 300, 22px, #1c1c1c);
+        }
+        .btn_arrow {
+          position: absolute;
+          right: 16px;
+        }
+      }
+    }
+}
+
+@include media("<=tablet") {
+  .modal_container {
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 768px;
+    width: auto;
+    .modal_game_btn_wrapper {
+      .modal_game_link--btn {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+@include media("<=phone") {
+  .modal_container {
+    max-width: 480px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    .modal_header_wrapper {
+      position: absolute;
+      margin-bottom: 0;
+      top: 15px;
+      margin: auto;
+      justify-content: flex-end;
+      .logo {
+        display: none;
+      }
+    }
+    .modal_header_img_wrapper {
+      height: 190px;
+      .game_header_mobile--img {
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 190px;
+      }
+    }
+    .modal_game_title_wrapper {
+      width: 85%;
+      justify-content: flex-start;
+      .title_container {
+        max-width: 340px;
+        .title {
+          @include notoSans-kr-style(22px, 500, 33px, #1c1c1c);
+        }
+      }
+    }
+    .modal_game_contents_wrapper {
+      width: 85%;
+    }
+    .modal_div_line {
+      width: 85%;
+    }
+    .modal_game--desc {
+      width: 85%;
+    }
+    .modal_game_btn_wrapper {
+      height: 120px;
+      .modal_game_link--btn {
+        width: 300px;
+      }
+    }
+  }
+}

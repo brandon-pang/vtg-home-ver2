@@ -1,0 +1,86 @@
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:visited,
+a:link,y
+a:hover {
+  text-decoration: none;
+}
+
+div {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  background: none;
+  border: none;
+  &:focus {
+    outline: 0;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+#root {
+  position: relative;
+}
+
+// react modal global styling
+.ReactModalPortal {
+  .ReactModal__Overlay {
+    z-index: 9999;
+    background-color: rgba(0,0,0,0.3) !important;
+    transition: all 500ms ease-in-out;
+    .ReactModal__Content {
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      @include flex-style(center, center);
+    }
+    .ReactModal__Content--after-open{
+      opacity: 1;
+    }
+    .ReactModal__Content--before-close{
+      opacity: 0;
+    }
+    .dialog__content {
+      height: 90vh;
+      background-color: #fff;
+    }
+  }
+}
+
+@include media("<=phone") {
+  .ReactModalPortal {
+    .ReactModal__Overlay {
+      .dialog__content {
+        height: 100vh;
+      }
+    }
+  }
+}
+
+// hide page scroll bar when modal is opened
+.ReactModal__Body--open {
+  overflow-y: hidden;
+}
+
+// consent styling
+.cookieConsent {
+  >div {
+    text-align: center;
+    @include notoSans-style(16px, 500, 22px, #fff);
+  }
+}
