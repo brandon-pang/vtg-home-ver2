@@ -4,7 +4,7 @@
 
 ## Screen shot (Desktop - Mobile)
 <div>
-![vtghome-img](https://user-images.githubusercontent.com/11290676/93526717-b2906800-f8ec-11ea-8ac6-c3f965017ef8.jpg)
+<img width="800" alt="tab" src="https://user-images.githubusercontent.com/11290676/93526717-b2906800-f8ec-11ea-8ac6-c3f965017ef8.jpg">
 </div>
 
 ## Spec
