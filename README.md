@@ -2,6 +2,9 @@
 [https://vertigogames.com](https://vertigogames.com)
 > Vertigo Games company website project Version 2
 
+## Screen shot (Desktop - Mobile)
+
+
 ## Spec
 ```
 - React.js
